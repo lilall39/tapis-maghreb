@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F2F0ED;
+  --foreground: #1A1A1A;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+@layer components {
+  .card-sm {
+    @apply p-4 w-full max-w-[300px];
+  }
+  .card-md {
+    @apply p-6 w-full max-w-[450px];
+  }
+  .card-lg {
+    @apply p-8 w-full max-w-[600px];
+  }
+
+  /* Section wrapper constraints */
+  .section-container {
+    @apply px-6 py-12 md:px-12 md:py-24 max-w-7xl mx-auto w-full;
+  }
+
+  .premium-transition {
+    @apply transition-all duration-500 ease-in-out;
+  }
+}
+
+/* Header visible and never overlapped */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: #F2F0ED;
+  border-bottom: 1px solid rgba(61, 64, 53, 0.1);
+}
