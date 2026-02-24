@@ -8,7 +8,7 @@ export default function Home() {
       <Hero 
         title="Tapis de prière artisanaux du Maghreb"
         subtitle="Objets spirituels sobres, premium et authentiques."
-        imageUrl="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1000"
+        imageUrl="/hero-rug.png"
       />
       
       <SectionWrapper>
