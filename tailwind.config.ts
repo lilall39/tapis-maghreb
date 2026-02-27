@@ -15,6 +15,7 @@ export default {
         },
         charcoal: "#1A1A1A", // charcoal black text
         olive: "#3D4035", // dark olive accent
+        "brand-mint": "#A7D7C5",
       },
     },
   },
