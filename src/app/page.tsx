@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <Hero 
-        title="Tapis de prière artisanaux du Maghreb"
-        subtitle="Un marché massif, peu structuré sur le premium."
+        title="Un marché massif, peu structuré sur le premium"
+        subtitle="Objets spirituels sobres, premium et authentiques."
         imageUrl="/hero-rug.png"
       />
       
