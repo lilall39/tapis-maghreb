@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <header className="w-full sticky top-0 z-50 shadow-sm" style={{ backgroundColor: '#244D2F' }}>
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
         <Link href="/" className="text-lg md:text-xl font-medium tracking-tight text-white z-50">
           Opportunités-Marché : Tapis de prières
         </Link>
