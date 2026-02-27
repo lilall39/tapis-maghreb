@@ -29,7 +29,7 @@ export default function Home() {
       </Hero>
       
       {/* Section 2: Décalage structurel (Alternée) */}
-      <SectionWrapper className="bg-stone-100 [&>.section-container]:pt-4 [&>.section-container]:pb-1 md:[&>.section-container]:pt-16 md:[&>.section-container]:pb-8">
+      <SectionWrapper className="bg-stone-100 [&>.section-container]:pt-4 [&>.section-container]:pb-1 md:[&>.section-container]:pt-16 md:[&>.section-container]:pb-0">
         <div className="max-w-2xl mb-10 md:mb-16 mt-4 md:mt-6">
           <h2 className="text-2xl md:text-3xl font-light text-charcoal tracking-tight">
             Un décalage structurel entre usage et offre
