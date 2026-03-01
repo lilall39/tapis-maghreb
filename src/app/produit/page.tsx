@@ -325,8 +325,8 @@ export default function Produit() {
       </section>
 
       {/* Section 3: Différentiation */}
-      <SectionWrapper className="bg-[#3D3C30] text-white [&>div]:py-14 md:[&>div]:py-22">
-        <div className="text-center max-w-4xl mx-auto space-y-10 mb-16">
+      <SectionWrapper className="bg-[#3D3C30] text-white [&>div]:py-8 md:[&>div]:py-16">
+        <div className="text-center max-w-4xl mx-auto space-y-4 mb-10">
           <h2 className="text-4xl md:text-5xl font-serif leading-tight text-[#D2B48C]">
             Des éléments difficilement <span className="italic text-white">réplicables</span>
           </h2>
