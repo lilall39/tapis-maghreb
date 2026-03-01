@@ -160,16 +160,16 @@ export default function Partenariats() {
       </section>
 
       {/* Section 4: Conclusion Vert */}
-      <SectionWrapper className="bg-[#4A3728] text-white text-center [&>div]:py-10 md:[&>div]:py-22">
-        <div className="max-w-3xl mx-auto space-y-8">
+      <SectionWrapper className="bg-[#4A3728] text-white text-center [&>div]:py-2 md:[&>div]:py-14">
+        <div className="max-w-3xl mx-auto space-y-4">
           <h2 className="text-5xl font-serif leading-tight">
             Construisons ensemble la référence du premium artisanal
           </h2>
-          <div className="space-y-6">
+          <div className="space-y-2">
             <p className="text-2xl opacity-80 leading-relaxed font-light">
               Nous sommes à votre disposition pour échanger sur les modalités de collaboration et vous présenter notre plan de développement détaillé.
             </p>
-            <p className="text-4xl opacity-90 leading-relaxed font-serif italic border-t border-white/10 pt-8 pb-12">
+            <p className="text-4xl opacity-90 leading-relaxed font-serif italic border-t border-white/10 pt-4 pb-4">
               « Une exécution rigoureuse au service d'une ambition claire : valoriser l'artisanat du Maghreb à travers des objets d'exception. »
             </p>
           </div>
