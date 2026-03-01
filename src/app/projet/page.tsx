@@ -365,7 +365,7 @@ export default function Projet() {
       </Hero>
 
       {/* Section Structure Financière */}
-      <div className="bg-white w-full py-16 md:py-24 border-b border-charcoal/5">
+      <div className="bg-white w-full py-6 md:py-14 border-b border-charcoal/5">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-start">
             <div className="space-y-8">
@@ -430,7 +430,7 @@ export default function Projet() {
       </SectionWrapper>
 
       {/* Conclusion Section */}
-      <SectionWrapper className="bg-[#244D2F] text-white text-center [&>div]:py-24 md:[&>div]:py-32">
+      <SectionWrapper className="bg-[#244D2F] text-white text-center [&>div]:py-14 md:[&>div]:py-22">
         <div className="max-w-4xl mx-auto space-y-12">
           <h2 className="text-3xl md:text-5xl font-serif leading-tight">
             Un modèle maîtrisé, un marché réel, une ambition structurée

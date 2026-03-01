@@ -67,7 +67,7 @@ export default function Partenariats() {
       />
 
       {/* Section 2: Carousel à Tringle Dorée (Ultra Premium) */}
-      <section className="w-full bg-white py-24 overflow-hidden relative">
+      <section className="w-full bg-white py-14 overflow-hidden relative">
         <div className="max-w-7xl mx-auto px-6 mb-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -160,7 +160,7 @@ export default function Partenariats() {
       </section>
 
       {/* Section 4: Conclusion Vert */}
-      <SectionWrapper className="bg-[#4A3728] text-white text-center [&>div]:py-20 md:[&>div]:py-32">
+      <SectionWrapper className="bg-[#4A3728] text-white text-center [&>div]:py-10 md:[&>div]:py-22">
         <div className="max-w-3xl mx-auto space-y-8">
           <h2 className="text-5xl font-serif leading-tight">
             Construisons ensemble la référence du premium artisanal

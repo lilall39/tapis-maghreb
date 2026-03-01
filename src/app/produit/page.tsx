@@ -174,7 +174,7 @@ export default function Produit() {
       </Hero>
 
       {/* Section 2: Paysage Concurrentiel */}
-      <section className="w-full relative overflow-hidden bg-white py-8 md:py-16">
+      <section className="w-full relative overflow-hidden bg-white py-2 md:py-6">
         {/* Double Rideau Reveal (Ultra Premium) - Vert & Lent */}
         <div className="absolute inset-0 z-30 pointer-events-none flex overflow-hidden">
           <motion.div
@@ -325,7 +325,7 @@ export default function Produit() {
       </section>
 
       {/* Section 3: Différentiation */}
-      <SectionWrapper className="bg-[#3D3C30] text-white [&>div]:py-24 md:[&>div]:py-32">
+      <SectionWrapper className="bg-[#3D3C30] text-white [&>div]:py-14 md:[&>div]:py-22">
         <div className="text-center max-w-4xl mx-auto space-y-10 mb-16">
           <h2 className="text-4xl md:text-5xl font-serif leading-tight text-[#D2B48C]">
             Des éléments difficilement <span className="italic text-white">réplicables</span>

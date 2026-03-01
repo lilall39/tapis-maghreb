@@ -260,7 +260,7 @@ export default function Home() {
       </div>
 
       {/* Section 3: Le décalage structurel */}
-      <SectionWrapper className="bg-white pt-0 pb-16 md:pb-24">
+      <SectionWrapper className="bg-white pt-0 pb-6 md:pb-14">
         <div className="max-w-4xl mx-auto text-center mb-4 mt-0">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -334,7 +334,7 @@ export default function Home() {
       </SectionWrapper>
 
       {/* Section 4: Taille du Marché (Detailed & Compact) */}
-      <SectionWrapper light={false} className="bg-[#352F36] text-white [&>div]:py-24 md:[&>div]:py-32">
+      <SectionWrapper light={false} className="bg-[#352F36] text-white [&>div]:py-14 md:[&>div]:py-22">
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Market Stats Left */}
           <div className="space-y-6 text-xl">
