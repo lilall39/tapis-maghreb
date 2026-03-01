@@ -37,20 +37,20 @@ export default function Produit() {
       <Hero 
         title={
           <div className="flex flex-col">
-            <span className="lg:whitespace-nowrap">Positionnement cohérent,</span>
-            <span className="lg:whitespace-nowrap">et structuré</span>
+            <span className="md:whitespace-nowrap">Positionnement cohérent,</span>
+            <span className="md:whitespace-nowrap">et structuré</span>
           </div>
         }
         subtitle="Une offre claire, une production maîtrisée et des éléments différenciants identifiés. Les fondations sont posées pour une exécution progressive et maîtrisée."
         imageUrl="/assets/rugs-collection.png"
         titleClassName="pt-12 md:pt-16"
-        textContainerClassName="lg:-ml-24"
+        textContainerClassName="md:-ml-24"
         subtitleClassName="text-2xl md:text-3xl not-italic font-normal mt-8 md:mt-12"
         buttonContainerClassName="pt-12 md:pt-24"
         buttonText="Pourquoi nous rejoindre"
         buttonLink="/partenariats"
       >
-        <div className="relative h-full w-full min-h-[500px] lg:min-h-[650px]">
+        <div className="relative h-full w-full min-h-[500px] md:min-h-[650px]">
           <AnimatePresence mode="wait">
             {activeCard === 0 ? (
               /* Première Carte - Vert Foncé */
@@ -270,7 +270,7 @@ export default function Produit() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="text-3xl md:text-5xl lg:text-7xl font-serif text-charcoal leading-tight lg:whitespace-nowrap"
+                className="text-3xl md:text-5xl lg:text-7xl font-serif text-charcoal leading-tight md:whitespace-nowrap"
               >
                 Un paysage concurrentiel <span className="italic text-[#3D3C30]">fragmenté</span>
               </motion.h2>

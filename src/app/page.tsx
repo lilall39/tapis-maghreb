@@ -83,18 +83,18 @@ export default function Home() {
       <Hero 
         title={
           <div className="flex flex-col">
-            <span className="lg:whitespace-nowrap">L’artisanat du Maghreb,</span>
-            <span className="lg:whitespace-nowrap">un fort potentiel à structurer</span>
+            <span className="md:whitespace-nowrap">L’artisanat du Maghreb,</span>
+            <span className="md:whitespace-nowrap">un fort potentiel à structurer</span>
           </div>
         }
         subtitle="Un marché massif, peu structuré sur le segment premium. Nous redéfinissons le tapis de prière comme un objet d'exception, alliant tradition séculaire et design contemporain."
         imageUrl="/assets/hero-v4.png"
-        textContainerClassName="lg:-ml-24"
+        textContainerClassName="md:-ml-24"
         titleClassName="pt-12 md:pt-16"
         subtitleClassName="text-2xl md:text-3xl not-italic font-normal mt-8 md:mt-12"
         buttonContainerClassName="pt-12 md:pt-20"
       >
-        <div className="relative h-full w-full min-h-[500px] lg:min-h-[650px]">
+        <div className="relative h-full w-full min-h-[500px] md:min-h-[650px]">
           <AnimatePresence mode="wait">
             {activeCard === 0 ? (
               /* Première Carte - Chiffres Clés */
@@ -269,8 +269,8 @@ export default function Home() {
             className="space-y-6"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal leading-tight flex flex-col items-center">
-              <span className="lg:whitespace-nowrap">L’usage est quotidien, la demande qualitative existe,</span>
-              <span className="lg:whitespace-nowrap">mais l’offre reste <span className="italic text-brand-primary font-medium">majoritairement industrielle et fragmentée.</span></span>
+              <span className="md:whitespace-nowrap">L’usage est quotidien, la demande qualitative existe,</span>
+              <span className="md:whitespace-nowrap">mais l’offre reste <span className="italic text-brand-primary font-medium">majoritairement industrielle et fragmentée.</span></span>
             </h2>
             <p className="text-2xl text-charcoal/90 font-light max-w-2xl mx-auto italic">
               Un acteur positionné clairement sur l’artisanat haut de gamme peut y construire une marque de référence.

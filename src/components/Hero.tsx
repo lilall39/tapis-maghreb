@@ -72,7 +72,7 @@ const Hero = ({
       <div className="max-w-7xl mx-auto px-6 py-24 relative z-10 w-full">
         <div className={cn(
           "flex flex-col items-center",
-          centered ? "text-center" : "lg:grid-cols-12 lg:grid lg:gap-12 lg:items-center"
+          centered ? "text-center" : "md:grid-cols-12 md:grid md:gap-12 md:items-center"
         )}>
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -80,7 +80,7 @@ const Hero = ({
             transition={{ duration: 0.8, ease: "easeOut" }}
             className={cn(
               "space-y-8",
-              centered ? "max-w-6xl mx-auto mb-16" : "lg:col-span-7",
+              centered ? "max-w-6xl mx-auto mb-16" : "md:col-span-7",
               textContainerClassName
             )}
           >
@@ -121,7 +121,7 @@ const Hero = ({
             transition={{ duration: 1, delay: 0.2 }}
             className={cn(
               "w-full",
-              centered ? "flex justify-center" : "lg:col-span-5 flex items-center justify-center lg:justify-end"
+              centered ? "flex justify-center" : "md:col-span-5 flex items-center justify-center md:justify-end"
             )}
           >
             {children}
