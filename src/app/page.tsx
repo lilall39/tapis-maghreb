@@ -337,11 +337,11 @@ export default function Home() {
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Market Stats Left */}
           <div className="space-y-4 text-xl">
-            <div className="mb-6 flex flex-col">
-              <h2 className="text-4xl md:text-5xl font-serif tracking-tight leading-tight border-l-2 border-brand-accent pl-6">
+            <div className="mb-6 flex flex-col items-center text-center">
+              <h2 className="text-4xl md:text-5xl font-serif tracking-tight leading-tight">
                 Taille de marché
               </h2>
-              <p className="text-brand-accent italic text-xl md:text-2xl mt-1 self-center opacity-80">
+              <p className="text-brand-accent italic text-xl md:text-2xl mt-1 opacity-80">
                 (avec sources)
               </p>
             </div>
