@@ -430,12 +430,12 @@ export default function Projet() {
       </SectionWrapper>
 
       {/* Conclusion Section */}
-      <SectionWrapper className="bg-[#244D2F] text-white text-center [&>div]:py-14 md:[&>div]:py-22">
-        <div className="max-w-4xl mx-auto space-y-12">
+      <SectionWrapper className="bg-[#244D2F] text-white text-center [&>div]:py-8 md:[&>div]:py-16">
+        <div className="max-w-4xl mx-auto space-y-6">
           <h2 className="text-3xl md:text-5xl font-serif leading-tight">
             Un modèle maîtrisé, un marché réel, une ambition structurée
           </h2>
-          <div className="space-y-8 text-xl md:text-2xl font-light opacity-90 leading-relaxed max-w-3xl mx-auto">
+          <div className="space-y-4 text-xl md:text-2xl font-light opacity-90 leading-relaxed max-w-3xl mx-auto">
             <p>
               Le projet repose sur une production artisanale contrôlée, un positionnement premium clair et une distribution directe à marge préservée.<br />
               La montée en charge est progressive, alignée sur la demande et la capacité atelier existante.
