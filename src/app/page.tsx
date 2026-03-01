@@ -215,7 +215,7 @@ export default function Home() {
       </Hero>
       
       {/* Section 2: Galerie Défilante avec Navigation */}
-      <div className="py-12 bg-white border-y border-brand-accent/10 relative group">
+      <div className="py-8 bg-white border-y border-brand-accent/10 relative group">
         {/* Navigation Arrows */}
         <div className="absolute inset-y-0 left-0 z-10 flex items-center pl-4 opacity-0 group-hover:opacity-100 transition-opacity">
           <button 
@@ -244,7 +244,7 @@ export default function Home() {
         >
           {/* Duplicate images for infinite scroll loop */}
           {[...rugImages, ...rugImages].map((src, i) => (
-            <div key={i} className="relative w-80 h-96 shrink-0 group overflow-hidden shadow-none">
+            <div key={i} className="relative w-80 h-84 shrink-0 group overflow-hidden shadow-none">
               <Image 
                 src={src} 
                 alt="Tapis artisanal" 
