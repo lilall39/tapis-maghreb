@@ -111,7 +111,7 @@ export default function Home() {
                   ease: [0.16, 1, 0.3, 1],
                   delay: 0.3
                 }}
-                className="absolute inset-0 lg:top-24 lg:-bottom-32 lg:-right-32 lg:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-center px-12 py-10 z-10 cursor-default"
+                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-16 px-12 py-10 z-10 cursor-default"
               >
                 <div className="space-y-4">
                   <motion.div
@@ -120,8 +120,8 @@ export default function Home() {
                     transition={{ delay: 0.8 }}
                     className="pb-2 border-b border-white/10 mb-4"
                   >
-                    <p className="text-brand-accent font-bold uppercase tracking-[0.3em] text-base mb-1">Chiffres Clés</p>
-                    <h3 className="text-4xl font-serif text-[#F5E6D3] italic">Analyse du Marché</h3>
+                    <p className="text-brand-accent font-bold uppercase tracking-[0.3em] text-sm mb-1">Chiffres Clés</p>
+                    <h3 className="text-3xl font-serif text-[#F5E6D3] italic">Analyse du Marché</h3>
                   </motion.div>
 
                   {[
@@ -136,14 +136,14 @@ export default function Home() {
                       transition={{ duration: 0.8, delay: 1.0 + (i * 0.2), ease: "easeOut" }}
                       className="flex flex-col"
                     >
-                      <div className="text-5xl font-serif text-[#D2B48C] font-bold origin-left drop-shadow-sm mb-2">
+                      <div className="text-4xl font-serif text-[#D2B48C] font-bold origin-left drop-shadow-sm mb-2">
                         {stat.value}
                       </div>
                       <div className="space-y-0">
-                        <p className="text-xl font-bold text-[#DCCBB5] uppercase tracking-[0.2em]">
+                        <p className="text-lg font-bold text-[#DCCBB5] uppercase tracking-[0.2em]">
                           {stat.label}
                         </p>
-                        <p className="text-xl text-[#F5E6D3]/80 font-medium italic leading-relaxed">
+                        <p className="text-lg text-[#F5E6D3]/80 font-medium italic leading-relaxed">
                           {stat.desc}
                         </p>
                       </div>
@@ -165,7 +165,7 @@ export default function Home() {
                   duration: 1.5, 
                   ease: [0.16, 1, 0.3, 1] 
                 }}
-                className="absolute inset-0 lg:top-24 lg:-bottom-32 lg:-right-32 lg:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-center px-12 py-10 z-20 cursor-default"
+                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-16 px-12 py-10 z-20 cursor-default"
               >
                 <div className="space-y-4">
                   <motion.div
@@ -181,7 +181,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.0 }}
-                className="text-4xl font-serif text-[#F5E6D3] leading-tight"
+                className="text-3xl font-serif text-[#F5E6D3] leading-tight"
               >
                 Une opportunité <br />
                 <span className="italic text-[#D2B48C]">unique de structuration</span>
@@ -191,20 +191,20 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.2, duration: 1 }}
-                className="space-y-6"
+                className="space-y-4"
               >
-                <div className="space-y-2 text-2xl text-[#F5E6D3]/90 leading-relaxed font-light">
+                <div className="space-y-1 text-xl text-[#F5E6D3]/90 leading-relaxed font-light">
                   <p>L’usage est quotidien.</p>
                   <p>La demande qualitative existe.</p>
-                  <p>Mais l’offre reste majoritairement industrielle.</p>
+                  <p>Mais l’offre reste industrielle.</p>
                 </div>
                 
-                <p className="text-xl text-[#F5E6D3]/70 font-light">
-                  Le marché demeure fragmenté, sans référence claire sur le premium artisanal.
+                <p className="text-lg text-[#F5E6D3]/70 font-light">
+                  Le marché demeure fragmenté, sans référence claire.
                 </p>
 
-                <p className="text-2xl text-[#DCCBB5] font-serif italic border-l-2 border-brand-primary pl-6 mt-12 lg:-ml-6">
-                  “Nous construisons la marque de référence du premium artisanal.”
+                <p className="text-xl text-[#DCCBB5] font-serif italic border-l-2 border-brand-primary pl-6 mt-8 lg:-ml-6">
+                  “Nous construisons la marque de référence.”
                 </p>
               </motion.div>
                 </div>

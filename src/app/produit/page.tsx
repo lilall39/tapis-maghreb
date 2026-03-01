@@ -66,7 +66,7 @@ export default function Produit() {
                   duration: 1.5, 
                   ease: [0.16, 1, 0.3, 1] 
                 }}
-                className="absolute inset-0 lg:top-24 lg:-bottom-32 lg:-right-32 lg:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-center px-12 py-10 z-10 cursor-default"
+                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-16 px-12 py-10 z-10 cursor-default"
               >
                 <div className="space-y-4">
                   <motion.div
@@ -75,11 +75,11 @@ export default function Produit() {
                     transition={{ delay: 0.8 }}
                     className="pb-2 border-b border-white/10 mb-2"
                   >
-                    <h3 className="text-4xl font-serif text-[#F5E6D3] italic leading-tight mb-4">
+                    <h3 className="text-3xl font-serif text-[#F5E6D3] italic leading-tight mb-2">
                       Des éléments difficilement <span className="italic text-[#D2B48C]">réplicables</span>
                     </h3>
-                    <p className="text-2xl text-[#F5E6D3]/90 font-normal leading-relaxed">
-                      Positionnement clair, ancrage culturel et structure opérationnelle maîtrisée.
+                    <p className="text-xl text-[#F5E6D3]/90 font-normal leading-relaxed">
+                      Positionnement clair, ancrage culturel et structure opérationnelle.
                     </p>
                   </motion.div>
 
@@ -91,8 +91,8 @@ export default function Produit() {
                       className="flex items-start gap-4"
                     >
                       <div className="w-1.5 h-1.5 rounded-full bg-[#D2B48C] mt-2.5 flex-shrink-0" />
-                      <p className="text-2xl text-[#F5E6D3]/90 leading-relaxed font-light">
-                        Production artisanale au Maghreb, avec des ateliers identifiés.
+                      <p className="text-xl text-[#F5E6D3]/90 leading-relaxed font-light">
+                        Production artisanale au Maghreb, ateliers identifiés.
                       </p>
                     </motion.div>
 
@@ -103,8 +103,8 @@ export default function Produit() {
                       className="flex items-start gap-4"
                     >
                       <div className="w-1.5 h-1.5 rounded-full bg-[#D2B48C] mt-2.5 flex-shrink-0" />
-                      <p className="text-2xl text-[#F5E6D3]/90 leading-relaxed font-light">
-                        Volumes maîtrisés et logique de qualité constante.
+                      <p className="text-xl text-[#F5E6D3]/90 leading-relaxed font-light">
+                        Volumes maîtrisés et qualité constante.
                       </p>
                     </motion.div>
                   </div>
@@ -124,7 +124,7 @@ export default function Produit() {
                   duration: 1.5, 
                   ease: [0.16, 1, 0.3, 1] 
                 }}
-                className="absolute inset-0 lg:top-24 lg:-bottom-32 lg:-right-32 lg:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-center px-12 py-10 z-10 cursor-default"
+                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-16 px-12 py-10 z-10 cursor-default"
               >
                 <div className="space-y-4">
                   <motion.div
@@ -133,11 +133,11 @@ export default function Produit() {
                     transition={{ delay: 0.8 }}
                     className="pb-2 border-b border-white/10 mb-2"
                   >
-                    <h3 className="text-4xl font-serif text-[#F5E6D3] italic leading-tight mb-4">
+                    <h3 className="text-3xl font-serif text-[#F5E6D3] italic leading-tight mb-2">
                       Positionnement <span className="italic text-[#D2B48C]">produit</span>
                     </h3>
-                    <p className="text-2xl text-[#F5E6D3]/90 font-normal leading-relaxed">
-                      Aucune marque structurée n’occupe aujourd’hui le segment artisanal haut de gamme du Maghreb en Europe.
+                    <p className="text-xl text-[#F5E6D3]/90 font-normal leading-relaxed">
+                      Aucune marque structurée n’occupe aujourd’hui le segment artisanal haut de gamme.
                     </p>
                   </motion.div>
 
@@ -149,7 +149,7 @@ export default function Produit() {
                       className="flex items-start gap-4"
                     >
                       <div className="w-1.5 h-1.5 rounded-full bg-[#D2B48C] mt-2.5 flex-shrink-0" />
-                      <p className="text-2xl text-[#F5E6D3]/90 leading-relaxed font-light">
+                      <p className="text-xl text-[#F5E6D3]/90 leading-relaxed font-light">
                         Design sobre et contemporain.
                       </p>
                     </motion.div>
@@ -161,8 +161,8 @@ export default function Produit() {
                       className="flex items-start gap-4"
                     >
                       <div className="w-1.5 h-1.5 rounded-full bg-[#D2B48C] mt-2.5 flex-shrink-0" />
-                      <p className="text-2xl text-[#F5E6D3]/90 leading-relaxed font-light">
-                        Premium accessible, sans ostentation ni surcharge visuelle.
+                      <p className="text-xl text-[#F5E6D3]/90 leading-relaxed font-light">
+                        Premium accessible, sans surcharge visuelle.
                       </p>
                     </motion.div>
                   </div>
