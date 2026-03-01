@@ -349,20 +349,20 @@ export default function Home() {
             <div className="space-y-2">
               <div className="space-y-1">
                 <p className="text-brand-accent font-bold uppercase tracking-wider text-xl">Un marché significatif en Europe</p>
-                <p className="text-2xl font-light">
+                <p className="text-xl font-light">
                   L’Europe compte environ <span className="font-bold text-white">30 millions</span> de musulmans.
                 </p>
                 <p className="text-lg text-white/40 italic">(Source : Pew Research Center)</p>
               </div>
 
               <div className="space-y-1">
-                <p className="text-2xl font-light">
+                <p className="text-xl font-light">
                   En France, la population musulmane est estimée entre <span className="font-bold text-white">5 et 6 millions</span> de personnes.
                 </p>
                 <p className="text-lg text-white/40 italic">(Source : Pew Research Center)</p>
               </div>
               
-              <p className="text-2xl font-normal leading-relaxed opacity-90 border-t border-white/5 pt-4">
+              <p className="text-xl font-normal leading-relaxed opacity-90 border-t border-white/5 pt-4">
                 L’usage quotidien et la logique cadeau rendent la demande structurellement récurrente.
               </p>
             </div>
