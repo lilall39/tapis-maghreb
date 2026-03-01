@@ -56,7 +56,7 @@ const Hero = ({
           initial={animateZoom ? { scale: 1 } : {}}
           animate={animateZoom ? { scale: 1.8 } : {}}
           style={{ originX: "60%", originY: "65%" }}
-          transition={animateZoom ? { duration: 20, ease: "linear", repeat: Infinity, repeatType: "alternate" } : {}}
+          transition={animateZoom ? { duration: 20, ease: "linear", repeat: Infinity, repeatType: "reverse" as const } : {}}
         >
           <Image
             src={imageUrl}
