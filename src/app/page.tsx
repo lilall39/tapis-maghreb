@@ -260,24 +260,23 @@ export default function Home() {
       </div>
 
       {/* Section 3: Le décalage structurel */}
-      <SectionWrapper className="bg-white pt-0 pb-6 md:pb-14">
-        <div className="max-w-4xl mx-auto text-center mb-4 mt-0">
+      <SectionWrapper className="bg-white pt-0 pb-2 md:pb-4">
+        <div className="max-w-4xl mx-auto text-center mb-0 mt-0">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="space-y-2"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal leading-tight flex flex-col items-center">
-              <span className="lg:whitespace-nowrap">L’usage est quotidien, la demande qualitative existe,</span>
-              <span className="lg:whitespace-nowrap">mais l’offre reste <span className="italic text-brand-primary font-medium">majoritairement industrielle et fragmentée.</span></span>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-charcoal leading-tight">
+              L’usage est quotidien, la demande qualitative existe, mais l’offre reste <span className="italic text-brand-primary font-medium">industrielle et fragmentée.</span>
             </h2>
-            <p className="text-2xl text-charcoal/90 font-light max-w-2xl mx-auto italic">
-              Un acteur positionné clairement sur l’artisanat haut de gamme peut y construire une marque de référence.
+            <p className="text-lg text-charcoal/90 font-light max-w-2xl mx-auto italic">
+              Un positionnement sur l’artisanat haut de gamme permet d'y bâtir une marque de référence.
             </p>
           </motion.div>
         </div>
-        <div className="flex flex-col lg:flex-row gap-16 items-center mt-24">
+        <div className="flex flex-col lg:flex-row gap-16 items-center mt-12">
           <div className="w-full lg:w-1/2 space-y-8">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
