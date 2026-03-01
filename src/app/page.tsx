@@ -372,8 +372,8 @@ export default function Home() {
               viewport={{ once: true }}
               className="space-y-4"
             >
-              <h3 className="text-4xl md:text-5xl font-serif leading-tight text-brand-accent">
-                Construisons ensemble <br /> une marque de référence
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-serif leading-tight text-brand-accent">
+                <span className="whitespace-nowrap">Construisons ensemble</span> <br className="hidden lg:block" /> une marque de référence
               </h3>
               <p className="text-2xl opacity-70 leading-relaxed">
                 Un acteur positionné sur l’artisanat haut de gamme peut capter un segment de marché durable.
