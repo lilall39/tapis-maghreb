@@ -112,47 +112,50 @@ const Infographic = () => {
                   <path d="M0,0 L10,5 L0,10 Z" fill="#D2B48C" />
                 </marker>
               </defs>
-              {steps.map((step, i) => {
-                const angle = (step.angle * Math.PI) / 180;
-                const radius = 400;
-                const x2 = Math.cos(angle) * radius;
-                const y2 = Math.sin(angle) * radius + 400;
-                
-                const startRadius = 220; 
-                const x1 = Math.cos(angle) * startRadius;
-                const y1 = Math.sin(angle) * startRadius + 400;
+            {steps.map((step, i) => {
+              const angle = (step.angle * Math.PI) / 180;
+              const radius = 400;
+              const x2 = Math.cos(angle) * radius;
+              const y2 = Math.sin(angle) * radius + 400;
+              
+              const startRadius = 220; 
+              const x1 = Math.cos(angle) * startRadius;
+              const y1 = Math.sin(angle) * startRadius + 400;
 
-                return (
-                  <React.Fragment key={`arrows-${step.id}`}>
-                    {/* Center to Dot */}
-                    <motion.line
-                      initial={{ pathLength: 0, opacity: 0 }}
-                      animate={{ pathLength: 1, opacity: 0.6 }}
-                      transition={{ delay: 1 + i * 0.1, duration: 0.8 }}
-                      x1={x1}
-                      y1={y1}
-                      x2={x2}
-                      y2={y2}
-                      stroke="#D2B48C"
-                      strokeWidth="2.5"
-                      markerEnd="url(#arrowhead)"
-                    />
-                    {/* Dot to Icon */}
-                    <motion.line
-                      initial={{ pathLength: 0, opacity: 0 }}
-                      animate={{ pathLength: 1, opacity: 0.6 }}
-                      transition={{ delay: 1.8 + i * 0.1, duration: 0.4 }}
-                      x1={x2 + 8}
-                      y1={y2}
-                      x2={x2 + 35}
-                      y2={y2}
-                      stroke="#D2B48C"
-                      strokeWidth="2.5"
-                      markerEnd="url(#arrowhead)"
-                    />
-                  </React.Fragment>
-                );
-              })}
+              // Correction d'alignement pour l'étape 01 (ampoule)
+              const stepYOffset = step.id === "01" ? -24 : 0;
+
+              return (
+                <React.Fragment key={`arrows-${step.id}`}>
+                  {/* Center to Dot */}
+                  <motion.line
+                    initial={{ pathLength: 0, opacity: 0 }}
+                    animate={{ pathLength: 1, opacity: 0.6 }}
+                    transition={{ delay: 1 + i * 0.1, duration: 0.8 }}
+                    x1={x1}
+                    y1={y1}
+                    x2={x2}
+                    y2={y2}
+                    stroke="#D2B48C"
+                    strokeWidth="2.5"
+                    markerEnd="url(#arrowhead)"
+                  />
+                  {/* Dot to Icon */}
+                  <motion.line
+                    initial={{ pathLength: 0, opacity: 0 }}
+                    animate={{ pathLength: 1, opacity: 0.6 }}
+                    transition={{ delay: 1.8 + i * 0.1, duration: 0.4 }}
+                    x1={x2 + 8}
+                    y1={y2}
+                    x2={x2 + 35}
+                    y2={y2 + stepYOffset}
+                    stroke="#D2B48C"
+                    strokeWidth="2.5"
+                    markerEnd="url(#arrowhead)"
+                  />
+                </React.Fragment>
+              );
+            })}
             </svg>
 
             {steps.map((step, i) => {
