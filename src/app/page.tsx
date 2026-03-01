@@ -91,7 +91,7 @@ export default function Home() {
         imageUrl="/assets/hero-v4.png"
         textContainerClassName="lg:-ml-24"
         titleClassName="pt-12 md:pt-16"
-        subtitleClassName="text-2xl md:text-3xl not-italic font-normal mt-8 md:mt-12"
+        subtitleClassName="text-xl md:text-2xl not-italic font-normal mt-8 md:mt-12"
         buttonContainerClassName="pt-12 md:pt-20"
       >
         <div className="relative h-full w-full min-h-[500px] lg:min-h-[650px]">

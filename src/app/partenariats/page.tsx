@@ -63,7 +63,7 @@ export default function Partenariats() {
         animateZoom={true}
         showButton={false}
         titleClassName="lg:whitespace-nowrap pt-12 md:pt-16"
-        subtitleClassName="text-2xl md:text-3xl not-italic font-normal mt-8 md:mt-12"
+        subtitleClassName="text-xl md:text-2xl not-italic font-normal mt-8 md:mt-12"
       />
 
       {/* Section 2: Carousel à Tringle Dorée (Ultra Premium) */}

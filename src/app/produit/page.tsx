@@ -45,7 +45,7 @@ export default function Produit() {
         imageUrl="/assets/rugs-collection.png"
         titleClassName="pt-12 md:pt-16"
         textContainerClassName="lg:-ml-24"
-        subtitleClassName="text-2xl md:text-3xl not-italic font-normal mt-8 md:mt-12"
+        subtitleClassName="text-xl md:text-2xl not-italic font-normal mt-8 md:mt-12"
         buttonContainerClassName="pt-12 md:pt-24"
         buttonText="Pourquoi nous rejoindre"
         buttonLink="/partenariats"
