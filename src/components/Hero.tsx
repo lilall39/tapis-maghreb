@@ -69,7 +69,7 @@ const Hero = ({
         </motion.div>
       )}
 
-      <div className="max-w-7xl mx-auto px-6 py-14 relative z-10 w-full">
+      <div className="max-w-7xl mx-auto px-6 py-8 relative z-10 w-full">
         <div className={cn(
           "flex flex-col items-center",
           centered ? "text-center" : "lg:grid-cols-12 lg:grid lg:gap-12 lg:items-center"
