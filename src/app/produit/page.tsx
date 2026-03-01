@@ -174,7 +174,7 @@ export default function Produit() {
       </Hero>
 
       {/* Section 2: Paysage Concurrentiel */}
-      <section className="w-full relative overflow-hidden bg-white py-2 md:py-6">
+      <section className="w-full relative overflow-hidden bg-white py-0 md:py-2">
         {/* Double Rideau Reveal (Ultra Premium) - Vert & Lent */}
         <div className="absolute inset-0 z-30 pointer-events-none flex overflow-hidden">
           <motion.div
@@ -264,7 +264,7 @@ export default function Produit() {
 
         <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
           <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
-            <div className="space-y-4 w-full">
+            <div className="space-y-2 w-full">
               <motion.h2 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -275,7 +275,7 @@ export default function Produit() {
                 Un paysage concurrentiel <span className="italic text-[#3D3C30]">fragmenté</span>
               </motion.h2>
 
-              <div className="space-y-6 max-w-3xl mx-auto">
+              <div className="space-y-3 max-w-3xl mx-auto">
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
