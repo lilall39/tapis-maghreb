@@ -66,7 +66,7 @@ export default function Produit() {
                   duration: 1.5, 
                   ease: [0.16, 1, 0.3, 1] 
                 }}
-                className="relative lg:absolute inset-0 lg:top-0 lg:-bottom-32 lg:-right-56 lg:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-center px-6 md:px-12 py-12 md:py-20 z-10 cursor-default mb-8 lg:mb-0"
+                className="absolute inset-0 md:top-0 md:-bottom-32 md:-right-56 md:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-center px-12 py-20 z-10 cursor-default"
               >
                 <div className="space-y-8 -translate-y-8">
                   <motion.div
@@ -124,7 +124,7 @@ export default function Produit() {
                   duration: 1.5, 
                   ease: [0.16, 1, 0.3, 1] 
                 }}
-                className="relative lg:absolute inset-0 lg:top-0 lg:-bottom-32 lg:-right-56 lg:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-center px-6 md:px-12 py-12 md:py-20 z-10 cursor-default mb-8 lg:mb-0"
+                className="absolute inset-0 md:top-0 md:-bottom-32 md:-right-56 md:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-center px-12 py-20 z-10 cursor-default"
               >
                 <div className="space-y-8 -translate-y-8">
                   <motion.div

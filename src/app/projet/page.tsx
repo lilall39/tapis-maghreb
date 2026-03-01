@@ -65,7 +65,7 @@ const Infographic = () => {
   return (
     <div className="relative w-full flex flex-col items-center">
       {/* Version Desktop (Cercle et Arc) - visible dès md */}
-      <div className="hidden md:flex relative w-full max-w-7xl mx-auto select-none items-center justify-start min-h-[750px] pl-10 md:pl-24 scale-[0.75] lg:scale-[0.85] origin-center">
+      <div className="hidden md:flex relative w-full max-w-7xl mx-auto select-none items-center justify-start min-h-[750px] pl-10 md:pl-24 scale-[0.8] lg:scale-[0.85] origin-center">
         
         <motion.div 
           initial={{ scale: 0.9, opacity: 0, x: -50 }}
@@ -472,7 +472,7 @@ export default function Projet() {
       </SectionWrapper>
 
       {/* Conclusion Section */}
-      <SectionWrapper className="bg-[#244D2F] text-white text-center [&>div]:py-16 md:[&>div]:py-24">
+      <SectionWrapper className="bg-[#244D2F] text-white text-center [&>div]:py-24 md:[&>div]:py-32">
         <div className="max-w-4xl mx-auto space-y-12">
           <h2 className="text-3xl md:text-5xl font-serif leading-tight">
             Un modèle maîtrisé, un marché réel, une ambition structurée

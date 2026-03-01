@@ -20,7 +20,7 @@ const SectionWrapper = ({ children, className = "", light = false, animate = tru
   const content = (
     <div className={cn(
       "max-w-7xl mx-auto px-6 w-full relative z-10",
-      !hasPaddingOverride ? "py-16 md:py-32" : "",
+      !hasPaddingOverride ? "py-20 md:py-32" : "",
       "px-6 md:px-12"
     )}>
       {children}
