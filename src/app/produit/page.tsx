@@ -185,7 +185,7 @@ export default function Produit() {
               times: [0, 0.375, 0.5, 0.875, 1], 
               ease: "easeInOut", 
               repeat: Infinity, 
-              delay: 0.1 
+              delay: 0.5 
             }}
             className="h-full w-1/2 bg-[#CAB8A1] relative overflow-hidden border-r border-black/5"
           >
@@ -227,7 +227,7 @@ export default function Produit() {
               times: [0, 0.375, 0.5, 0.875, 1], 
               ease: "easeInOut", 
               repeat: Infinity, 
-              delay: 0.1 
+              delay: 0.5 
             }}
             className="h-full w-1/2 bg-[#CAB8A1] relative overflow-hidden border-l border-black/5"
           >
