@@ -83,18 +83,18 @@ export default function Home() {
       <Hero 
         title={
           <div className="flex flex-col">
-            <span className="md:whitespace-nowrap">L’artisanat du Maghreb,</span>
-            <span className="md:whitespace-nowrap">un fort potentiel à structurer</span>
+            <span className="lg:whitespace-nowrap">L’artisanat du Maghreb,</span>
+            <span className="lg:whitespace-nowrap">un fort potentiel à structurer</span>
           </div>
         }
         subtitle="Un marché massif, peu structuré sur le segment premium. Nous redéfinissons le tapis de prière comme un objet d'exception, alliant tradition séculaire et design contemporain."
         imageUrl="/assets/hero-v4.png"
-        textContainerClassName="md:-ml-24"
+        textContainerClassName="lg:-ml-24"
         titleClassName="pt-12 md:pt-16"
         subtitleClassName="text-2xl md:text-3xl not-italic font-normal mt-8 md:mt-12"
         buttonContainerClassName="pt-12 md:pt-20"
       >
-        <div className="relative h-full w-full min-h-[500px] md:min-h-[650px]">
+        <div className="relative h-full w-full min-h-[500px] lg:min-h-[650px]">
           <AnimatePresence mode="wait">
             {activeCard === 0 ? (
               /* Première Carte - Chiffres Clés */
@@ -111,7 +111,7 @@ export default function Home() {
                   ease: [0.16, 1, 0.3, 1],
                   delay: 0.3
                 }}
-                className="absolute inset-0 md:top-0 md:-bottom-32 md:-right-56 md:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-center px-12 py-20 z-10 cursor-default"
+                className="absolute inset-0 lg:top-0 lg:-bottom-32 lg:-right-56 lg:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-center px-12 py-20 z-10 cursor-default"
               >
                 <div className="space-y-8 -translate-y-8">
                   <motion.div
@@ -165,7 +165,7 @@ export default function Home() {
                   duration: 1.5, 
                   ease: [0.16, 1, 0.3, 1] 
                 }}
-                className="absolute inset-0 md:top-0 md:-bottom-32 md:-right-56 md:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-center px-12 py-20 z-20 cursor-default"
+                className="absolute inset-0 lg:top-0 lg:-bottom-32 lg:-right-56 lg:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-center px-12 py-20 z-20 cursor-default"
               >
                 <div className="space-y-8 -translate-y-8">
                   <motion.div
@@ -269,8 +269,8 @@ export default function Home() {
             className="space-y-6"
           >
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-charcoal leading-tight flex flex-col items-center">
-              <span className="md:whitespace-nowrap">L’usage est quotidien, la demande qualitative existe,</span>
-              <span className="md:whitespace-nowrap">mais l’offre reste <span className="italic text-brand-primary font-medium">majoritairement industrielle et fragmentée.</span></span>
+              <span className="lg:whitespace-nowrap">L’usage est quotidien, la demande qualitative existe,</span>
+              <span className="lg:whitespace-nowrap">mais l’offre reste <span className="italic text-brand-primary font-medium">majoritairement industrielle et fragmentée.</span></span>
             </h2>
             <p className="text-2xl text-charcoal/90 font-light max-w-2xl mx-auto italic">
               Un acteur positionné clairement sur l’artisanat haut de gamme peut y construire une marque de référence.

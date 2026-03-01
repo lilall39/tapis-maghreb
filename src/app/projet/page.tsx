@@ -63,9 +63,8 @@ const Infographic = () => {
   ];
 
   return (
-    <div className="relative w-full flex flex-col items-center">
-      {/* Version Desktop (Cercle et Arc) - visible dès md */}
-      <div className="hidden md:flex relative w-full max-w-7xl mx-auto select-none items-center justify-start min-h-[750px] pl-10 md:pl-24 scale-[0.8] lg:scale-[0.85] origin-center">
+    <div className="relative w-full flex flex-col">
+      <div className="relative w-full max-w-7xl mx-auto select-none flex items-center justify-start min-h-[650px] md:min-h-[750px] pl-10 md:pl-24 scale-[0.8] lg:scale-[0.85] origin-center">
         
         <motion.div 
           initial={{ scale: 0.9, opacity: 0, x: -50 }}
@@ -175,6 +174,9 @@ const Infographic = () => {
                     {/* Point on the Arc */}
                     <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-white z-50 shadow-[0_0_15px_rgba(255,255,255,0.5)] border-4 border-[#D2B48C]/50" />
 
+                    {/* Connecting Line - REMOVED since we use SVG arrows now */}
+                    <div className="absolute left-0 top-1/2 w-10 h-px bg-transparent -translate-y-1/2" />
+
                     {/* Step Group */}
                     <div className="ml-10 flex items-center gap-4 group">
                       
@@ -220,55 +222,11 @@ const Infographic = () => {
           </div>
         </div>
       </div>
-
-      {/* Version Mobile (Liste verticale) - visible seulement sur mobile */}
-      <div className="flex md:hidden flex-col w-full px-4 py-12 gap-8 items-center">
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="w-full rounded-2xl bg-[#244D2F] border-2 border-[#D2B48C] p-8 text-center shadow-xl"
-        >
-          <h3 className="text-white font-serif font-bold text-2xl uppercase mb-4 tracking-tight">
-            Business Infographic
-          </h3>
-          <p className="text-white text-lg leading-relaxed font-medium">
-            Production artisanale, distribution directe, montée progressive. <br />
-            Chaîne de valeur maîtrisée – Risque contrôlé.
-          </p>
-        </motion.div>
-
-        <div className="w-full space-y-6">
-          {steps.map((step, i) => (
-            <motion.div
-              key={step.id}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: i * 0.1 }}
-              className="relative pl-6 border-l-2 border-[#D2B48C]/30"
-            >
-              <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-[#D2B48C]" />
-              <div className="bg-[#4a915c]/20 backdrop-blur-sm p-6 rounded-xl border border-[#D2B48C]/30 shadow-sm">
-                <div className="flex items-center gap-4 mb-3">
-                  <div className="w-10 h-10 rounded-full bg-[#244D2F] border border-[#D2B48C] flex items-center justify-center text-[#D2B48C]">
-                    {step.icon}
-                  </div>
-                  <h4 className="text-white font-serif font-bold text-lg uppercase tracking-wide">
-                    {step.id}. {step.title}
-                  </h4>
-                </div>
-                <p className="text-white/80 text-base leading-relaxed">
-                  {step.desc}
-                </p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
       
-      {/* Bouton Investissement - Adapté pour mobile */}
-      <div className="relative md:absolute mt-8 md:mt-0 md:-bottom-10 left-0 md:left-4 z-[60] md:-translate-x-full">
-        <Link href="/partenariats" className="block w-full md:w-auto">
-          <button className="w-full md:w-auto px-10 py-5 bg-[#DCCBB5] text-charcoal font-bold hover:bg-white active:bg-white transition-all duration-300 rounded-sm uppercase tracking-widest text-sm cursor-pointer shadow-2xl hover:shadow-xl border-2 border-[#D2B48C]">
+      {/* Bouton Investissement en bas à gauche */}
+      <div className="absolute -bottom-10 left-0 md:left-4 z-[60] -translate-x-full">
+        <Link href="/partenariats">
+          <button className="px-10 py-5 bg-[#DCCBB5] text-charcoal font-bold hover:bg-white active:bg-white transition-all duration-300 rounded-sm uppercase tracking-widest text-sm cursor-pointer shadow-2xl hover:shadow-xl border-2 border-[#D2B48C]">
             Investissement
           </button>
         </Link>
@@ -289,8 +247,8 @@ const DonutChart = () => {
   let cumulativeValue = 0;
 
   return (
-    <div className="flex flex-col items-center lg:items-start gap-8 md:gap-12">
-      <div className="relative w-56 h-56 md:w-72 md:h-72 shrink-0">
+    <div className="flex flex-col items-center lg:items-start gap-12">
+      <div className="relative w-72 h-72 shrink-0">
         <svg viewBox="0 0 100 100" className="w-full h-full -rotate-90">
           {data.map((item, i) => {
             const radius = 35;
@@ -325,11 +283,11 @@ const DonutChart = () => {
           <div className="w-[50%] h-[50%] bg-white rounded-full" />
         </div>
       </div>
-      <div className="space-y-3 md:space-y-4 w-full">
+      <div className="space-y-4 w-full">
         {data.map((item, i) => (
           <div key={i} className="flex items-center gap-4">
-            <div className="w-3 h-3 md:w-3.5 md:h-3.5 rounded-full shrink-0 shadow-sm" style={{ backgroundColor: item.color }} />
-            <span className="text-base md:text-lg text-charcoal/80 font-medium whitespace-nowrap">
+            <div className="w-3.5 h-3.5 rounded-full shrink-0 shadow-sm" style={{ backgroundColor: item.color }} />
+            <span className="text-lg text-charcoal/80 font-medium whitespace-nowrap">
               {item.label} <span className="text-charcoal/30 mx-1">–</span> <span className="font-bold text-charcoal">{item.value}%</span>
             </span>
           </div>
@@ -347,15 +305,15 @@ const ProductionBarChart = () => {
   ];
 
   return (
-    <div className="w-full max-w-xl mx-auto flex flex-col items-center px-2">
-      <div className="w-full flex items-end justify-between h-64 md:h-80 gap-3 md:gap-8 border-b-2 border-charcoal/10 pb-2 mb-6 relative">
+    <div className="w-full max-w-xl mx-auto flex flex-col items-center">
+      <div className="w-full flex items-end justify-between h-80 gap-4 md:gap-8 border-b-2 border-charcoal/10 pb-2 mb-6 relative">
         {chartData.map((item, i) => (
           <div key={i} className="flex-1 flex flex-col items-center gap-4 h-full justify-end group">
             <motion.span 
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 + (i * 0.2) }}
-              className="text-xs md:text-sm font-bold text-charcoal"
+              className="text-sm font-bold text-charcoal"
             >
               {item.value} u/m
             </motion.span>
@@ -371,17 +329,17 @@ const ProductionBarChart = () => {
         ))}
       </div>
       
-      <div className="w-full flex justify-between mb-8 md:mb-16 px-2">
+      <div className="w-full flex justify-between mb-16 px-2">
         {chartData.map((item, i) => (
-          <div key={i} className="flex-1 text-center font-bold text-charcoal uppercase tracking-[0.1em] md:tracking-[0.2em] text-[10px] md:text-sm">
+          <div key={i} className="flex-1 text-center font-bold text-charcoal uppercase tracking-[0.2em] text-sm">
             {item.label}
           </div>
         ))}
       </div>
 
-      <div className="space-y-2 md:space-y-3 text-center bg-charcoal/[0.02] p-6 md:p-8 rounded-xl w-full border border-charcoal/5">
-        <p className="text-[10px] md:text-sm font-bold text-charcoal uppercase tracking-[0.2em] md:tracking-[0.3em] italic mb-1">Unités produites par mois</p>
-        <p className="text-base md:text-lg text-charcoal/80 leading-relaxed font-light">
+      <div className="space-y-3 text-center bg-charcoal/[0.02] p-8 rounded-xl w-full border border-charcoal/5">
+        <p className="text-sm font-bold text-charcoal uppercase tracking-[0.3em] italic mb-1">Unités produites par mois</p>
+        <p className="text-lg text-charcoal/80 leading-relaxed font-light">
           Production ajustée à la demande.<br />
           Capacité extensible via <span className="font-medium text-charcoal">ateliers partenaires</span> identifiés au Maghreb.
         </p>
@@ -447,9 +405,9 @@ export default function Projet() {
 
       {/* Grid of Graphics (Donut & Production) */}
       <SectionWrapper className="bg-[#F1F5F2]">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
           {/* Left: Utilisation des fonds */}
-          <div className="space-y-12 md:space-y-16">
+          <div className="space-y-16">
             <h2 className="text-3xl md:text-4xl font-serif text-charcoal text-center lg:text-left">
               Utilisation des fonds
             </h2>
@@ -457,7 +415,7 @@ export default function Projet() {
           </div>
 
           {/* Right: Projection de production */}
-          <div className="space-y-8 md:space-y-12 mt-16 lg:mt-0">
+          <div className="space-y-12">
             <div className="space-y-4 text-center">
               <h2 className="text-3xl md:text-4xl font-serif text-charcoal">
                 Projection de production maîtrisée

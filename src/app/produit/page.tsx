@@ -37,20 +37,20 @@ export default function Produit() {
       <Hero 
         title={
           <div className="flex flex-col">
-            <span className="md:whitespace-nowrap">Positionnement cohérent,</span>
-            <span className="md:whitespace-nowrap">et structuré</span>
+            <span className="lg:whitespace-nowrap">Positionnement cohérent,</span>
+            <span className="lg:whitespace-nowrap">et structuré</span>
           </div>
         }
         subtitle="Une offre claire, une production maîtrisée et des éléments différenciants identifiés. Les fondations sont posées pour une exécution progressive et maîtrisée."
         imageUrl="/assets/rugs-collection.png"
         titleClassName="pt-12 md:pt-16"
-        textContainerClassName="md:-ml-24"
+        textContainerClassName="lg:-ml-24"
         subtitleClassName="text-2xl md:text-3xl not-italic font-normal mt-8 md:mt-12"
         buttonContainerClassName="pt-12 md:pt-24"
         buttonText="Pourquoi nous rejoindre"
         buttonLink="/partenariats"
       >
-        <div className="relative h-full w-full min-h-[500px] md:min-h-[650px]">
+        <div className="relative h-full w-full min-h-[500px] lg:min-h-[650px]">
           <AnimatePresence mode="wait">
             {activeCard === 0 ? (
               /* Première Carte - Vert Foncé */
@@ -66,7 +66,7 @@ export default function Produit() {
                   duration: 1.5, 
                   ease: [0.16, 1, 0.3, 1] 
                 }}
-                className="absolute inset-0 md:top-0 md:-bottom-32 md:-right-56 md:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-center px-12 py-20 z-10 cursor-default"
+                className="absolute inset-0 lg:top-0 lg:-bottom-32 lg:-right-56 lg:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-center px-12 py-20 z-10 cursor-default"
               >
                 <div className="space-y-8 -translate-y-8">
                   <motion.div
@@ -124,7 +124,7 @@ export default function Produit() {
                   duration: 1.5, 
                   ease: [0.16, 1, 0.3, 1] 
                 }}
-                className="absolute inset-0 md:top-0 md:-bottom-32 md:-right-56 md:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-center px-12 py-20 z-10 cursor-default"
+                className="absolute inset-0 lg:top-0 lg:-bottom-32 lg:-right-56 lg:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-center px-12 py-20 z-10 cursor-default"
               >
                 <div className="space-y-8 -translate-y-8">
                   <motion.div
@@ -175,8 +175,8 @@ export default function Produit() {
 
       {/* Section 2: Paysage Concurrentiel */}
       <section className="w-full relative overflow-hidden bg-white py-8 md:py-16">
-        {/* Double Rideau Reveal (Ultra Premium) - Vert & Lent - Hidden on Mobile */}
-        <div className="hidden lg:flex absolute inset-0 z-30 pointer-events-none overflow-hidden">
+        {/* Double Rideau Reveal (Ultra Premium) - Vert & Lent */}
+        <div className="absolute inset-0 z-30 pointer-events-none flex overflow-hidden">
           <motion.div
             animate={{ x: [0, 0, "-100%", "-100%", 0] }}
             viewport={{ once: false, margin: "-10% 0px" }}
@@ -270,7 +270,7 @@ export default function Produit() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="text-3xl md:text-5xl lg:text-7xl font-serif text-charcoal leading-tight md:whitespace-nowrap"
+                className="text-4xl md:text-5xl lg:text-7xl font-serif text-charcoal leading-tight whitespace-nowrap relative -left-[3ch]"
               >
                 Un paysage concurrentiel <span className="italic text-[#3D3C30]">fragmenté</span>
               </motion.h2>
@@ -314,7 +314,7 @@ export default function Produit() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 1, delay: 1.6 }}
-                  className="text-xl md:text-2xl font-serif italic text-[#3D3C30] leading-relaxed"
+                  className="text-2xl font-serif italic text-[#3D3C30] leading-relaxed relative -top-[1em]"
                 >
                   Aucune marque structurée n’occupe aujourd’hui le segment artisanal haut de gamme du Maghreb en Europe, ce qui laisse un espace concurrentiel significatif pour une marque différenciée.
                 </motion.p>

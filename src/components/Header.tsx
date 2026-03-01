@@ -39,7 +39,7 @@ const Header = () => {
         <Link 
           href="/" 
           className={cn(
-            "text-2xl md:text-3xl font-serif font-semibold tracking-tighter transition-colors duration-500",
+            "text-xl md:text-2xl font-serif font-semibold tracking-tighter transition-colors duration-500",
             scrolled ? "text-brand-primary" : "text-white"
           )}
         >
@@ -53,7 +53,7 @@ const Header = () => {
               key={item.href}
               href={item.href}
               className={cn(
-                "text-base font-medium tracking-wide uppercase transition-all duration-300 relative group",
+                "text-sm font-medium tracking-wide uppercase transition-all duration-300 relative group",
                 scrolled ? "text-charcoal hover:text-brand-primary" : "text-white hover:text-white/80",
                 pathname === item.href && (scrolled ? "text-brand-primary" : "text-white")
               )}
@@ -109,7 +109,7 @@ const Header = () => {
                       href={item.href}
                       onClick={() => setIsMenuOpen(false)}
                       className={cn(
-                        "text-3xl font-serif text-white/80 hover:text-white transition-colors",
+                        "text-2xl font-serif text-white/80 hover:text-white transition-colors",
                         pathname === item.href && "text-white font-bold italic underline underline-offset-8"
                       )}
                     >
