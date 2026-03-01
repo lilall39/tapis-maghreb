@@ -2,87 +2,125 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const Header = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navItems = [
     { name: "Opportunité", href: "/" },
     { name: "Offre & Avantage Concurrentiel", href: "/produit" },
-    { name: "Partenariats & Investissement", href: "/partenariats" },
-    { name: "Modèle & Exécution", href: "/projet" },
+    { name: "Partenaires & Investissement", href: "/partenariats" },
+    { name: "Modèle et exécution", href: "/projet" },
   ];
 
   return (
-    <header className="w-full sticky top-0 z-50 shadow-sm" style={{ backgroundColor: '#244D2F' }}>
-      <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
-        <Link href="/" className="text-lg md:text-xl font-medium tracking-tight text-white z-50">
-          Opportunités-Marché : Tapis de prières
+    <header 
+      className={cn(
+        "fixed top-0 left-0 w-full z-50 transition-all duration-500",
+        scrolled ? "bg-white/90 backdrop-blur-md h-24 shadow-sm" : "bg-transparent h-28"
+      )}
+    >
+      <div className={cn(
+        "w-full px-6 flex items-center justify-between transition-all duration-500",
+        scrolled ? "h-20" : "h-24"
+      )}>
+        <Link 
+          href="/" 
+          className={cn(
+            "text-2xl md:text-3xl font-serif font-semibold tracking-tighter transition-colors duration-500",
+            scrolled ? "text-brand-primary" : "text-white"
+          )}
+        >
+          TAPIS MAGHREB
         </Link>
         
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex space-x-8">
+        <nav className="hidden lg:flex space-x-10">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`text-sm tracking-wide premium-transition ${
-                pathname === item.href
-                  ? "text-stone-100 font-semibold underline underline-offset-8"
-                  : "text-white/70 hover:text-white"
-              }`}
+              className={cn(
+                "text-base font-medium tracking-wide uppercase transition-all duration-300 relative group",
+                scrolled ? "text-charcoal hover:text-brand-primary" : "text-white hover:text-white/80",
+                pathname === item.href && (scrolled ? "text-brand-primary" : "text-white")
+              )}
             >
               {item.name}
+              <span className={cn(
+                "absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full",
+                scrolled ? "bg-brand-primary" : "bg-white",
+                pathname === item.href && "w-full"
+              )} />
             </Link>
           ))}
         </nav>
 
         {/* Mobile Menu Toggle */}
         <button 
-          className="lg:hidden z-50 text-white p-2"
+          className={cn(
+            "lg:hidden p-2 rounded-full transition-colors",
+            scrolled ? "text-charcoal hover:bg-charcoal/10" : "text-white hover:bg-white/10"
+          )}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            fill="none" 
-            viewBox="0 0 24 24" 
-            strokeWidth={1.5} 
-            stroke="currentColor" 
-            className="w-6 h-6"
-          >
-            {isMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            )}
-          </svg>
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
         {/* Mobile Nav Overlay */}
-        <div className={`
-          fixed inset-0 bg-[#244D2F] transition-transform duration-300 ease-in-out lg:hidden
-          ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
-        `}>
-          <nav className="flex flex-col items-center justify-center h-full space-y-8 px-6 text-center">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
+        <AnimatePresence>
+          {isMenuOpen && (
+              <motion.div 
+              initial={{ opacity: 0, x: "100%" }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: "100%" }}
+              transition={{ type: "spring", damping: 25, stiffness: 200 }}
+              className="fixed inset-0 bg-brand-primary z-[60] lg:hidden flex flex-col items-center justify-center"
+            >
+              <button 
+                className="absolute top-8 right-6 text-white p-2"
                 onClick={() => setIsMenuOpen(false)}
-                className={`text-xl tracking-wide premium-transition ${
-                  pathname === item.href
-                    ? "text-white font-semibold underline underline-offset-8"
-                    : "text-white/70 hover:text-white"
-                }`}
               >
-                {item.name}
-              </Link>
-            ))}
-          </nav>
-        </div>
+                <X size={32} />
+              </button>
+              
+              <nav className="flex flex-col items-center space-y-8 px-6 text-center">
+                {navItems.map((item, i) => (
+                  <motion.div
+                    key={item.href}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: i * 0.1 }}
+                  >
+                    <Link
+                      href={item.href}
+                      onClick={() => setIsMenuOpen(false)}
+                      className={cn(
+                        "text-3xl font-serif text-white/80 hover:text-white transition-colors",
+                        pathname === item.href && "text-white font-bold italic underline underline-offset-8"
+                      )}
+                    >
+                      {item.name}
+                    </Link>
+                  </motion.div>
+                ))}
+              </nav>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </header>
   );
