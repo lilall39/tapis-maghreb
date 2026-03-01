@@ -264,7 +264,7 @@ export default function Produit() {
 
         <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
           <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
-            <div className="space-y-16 w-full">
+            <div className="space-y-4 w-full">
               <motion.h2 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -275,7 +275,7 @@ export default function Produit() {
                 Un paysage concurrentiel <span className="italic text-[#3D3C30]">fragmenté</span>
               </motion.h2>
 
-              <div className="space-y-10 max-w-3xl mx-auto">
+              <div className="space-y-6 max-w-3xl mx-auto">
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
