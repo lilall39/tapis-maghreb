@@ -339,7 +339,7 @@ export default function Home() {
           <div className="space-y-4 text-xl">
             <h2 className="text-4xl md:text-5xl font-serif tracking-tight leading-tight border-l-2 border-brand-accent pl-6 mb-4">
               Taille de marché <br />
-              <span className="text-brand-accent italic">(avec sources)</span>
+              <span className="text-brand-accent italic text-2xl md:text-3xl">(avec sources)</span>
             </h2>
             
             <div className="space-y-2">
