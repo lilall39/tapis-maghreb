@@ -373,7 +373,7 @@ export default function Home() {
               className="space-y-4"
             >
               <h3 className="text-4xl md:text-5xl font-serif leading-tight text-brand-accent">
-                Construisons ensemble une marque de référence
+                Construisons ensemble <br /> une marque de référence
               </h3>
               <p className="text-2xl opacity-70 leading-relaxed">
                 Un acteur positionné sur l’artisanat haut de gamme peut capter un segment de marché durable.
