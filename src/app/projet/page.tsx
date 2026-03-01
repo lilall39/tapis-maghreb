@@ -224,7 +224,7 @@ const Infographic = () => {
       </div>
       
       {/* Bouton Investissement en bas à gauche */}
-      <div className="absolute bottom-6 left-5 z-[60] -translate-x-full">
+      <div className="absolute bottom-6 left-5 z-[60]">
         <Link href="/partenariats">
           <button className="px-10 py-5 bg-[#DCCBB5] text-charcoal font-bold hover:bg-white active:bg-white transition-all duration-300 rounded-sm uppercase tracking-widest text-sm cursor-pointer shadow-2xl hover:shadow-xl border-2 border-[#D2B48C]">
             Investissement
