@@ -333,16 +333,16 @@ export default function Home() {
       </SectionWrapper>
 
       {/* Section 4: Taille du Marché (Detailed & Compact) */}
-      <SectionWrapper light={false} className="bg-[#352F36] text-white [&>div]:py-14 md:[&>div]:py-22">
+      <SectionWrapper light={false} className="bg-[#352F36] text-white [&>div]:py-6 md:[&>div]:py-14">
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Market Stats Left */}
-          <div className="space-y-6 text-xl">
-            <h2 className="text-4xl md:text-5xl font-serif tracking-tight leading-tight border-l-2 border-brand-accent pl-6 mb-8">
+          <div className="space-y-4 text-xl">
+            <h2 className="text-4xl md:text-5xl font-serif tracking-tight leading-tight border-l-2 border-brand-accent pl-6 mb-4">
               Taille de marché <br />
               <span className="text-brand-accent italic">(avec sources)</span>
             </h2>
             
-            <div className="space-y-4">
+            <div className="space-y-2">
               <div className="space-y-1">
                 <p className="text-brand-accent font-bold uppercase tracking-wider text-xl">Un marché significatif en Europe</p>
                 <p className="text-2xl font-light">
@@ -353,32 +353,32 @@ export default function Home() {
 
               <div className="space-y-1">
                 <p className="text-2xl font-light">
-                  En France, la population musulmane est estimée entre <span className="font-bold text-white">5 et 6 millions</span> de personnes, soit l’une des plus importantes d’Europe occidentale.
+                  En France, la population musulmane est estimée entre <span className="font-bold text-white">5 et 6 millions</span> de personnes.
                 </p>
                 <p className="text-lg text-white/40 italic">(Source : Pew Research Center)</p>
               </div>
               
               <p className="text-2xl font-normal leading-relaxed opacity-90 border-t border-white/5 pt-4">
-                L’usage quotidien du tapis de prière et la logique cadeau (Ramadan, Aïd, événements familiaux) rendent la demande structurellement récurrente.
+                L’usage quotidien et la logique cadeau rendent la demande structurellement récurrente.
               </p>
             </div>
           </div>
 
           {/* Conclusion Right */}
-          <div className="lg:border-l lg:border-white/10 lg:pl-12 space-y-6 h-full flex flex-col justify-center">
+          <div className="lg:border-l lg:border-white/10 lg:pl-12 space-y-4 h-full flex flex-col justify-center">
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="space-y-6"
+              className="space-y-4"
             >
               <h3 className="text-4xl md:text-5xl font-serif leading-tight text-brand-accent">
                 Construisons ensemble une marque de référence
               </h3>
               <p className="text-2xl opacity-70 leading-relaxed">
-                Un acteur positionné sur l’artisanat haut de gamme peut capter un segment de marché durable et fidèle.
+                Un acteur positionné sur l’artisanat haut de gamme peut capter un segment de marché durable.
               </p>
-              <div className="pt-10">
+              <div className="pt-4">
                 <Link href="/projet">
                   <button className="w-full md:w-auto px-8 py-3 bg-[#DCCBB5] text-black font-bold rounded-sm uppercase tracking-widest text-xs hover:bg-white hover:text-black transition-all shadow-xl cursor-pointer">
                     Découvrir notre modèle
