@@ -342,10 +342,10 @@ export default function Home() {
 
       {/* Section 4: Taille du Marché (Detailed & Compact) */}
       <SectionWrapper light={false} className="bg-[#352F36] text-white [&>div]:py-6 md:[&>div]:py-14">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Market Stats Left */}
-          <div className="space-y-4 text-xl">
-            <div className="mb-6 flex flex-col items-center text-center">
+          <div className="space-y-6 text-xl">
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
               <h2 className="text-4xl md:text-5xl font-serif tracking-tight leading-tight">
                 Taille de marché
               </h2>
@@ -354,43 +354,66 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="space-y-2">
+            <div className="space-y-4">
               <div className="space-y-1">
-                <p className="text-brand-accent font-bold uppercase tracking-wider text-xl">Un marché significatif en Europe</p>
-                <p className="text-xl font-light">
-                  L’Europe compte environ <span className="font-bold text-white">30 millions</span> de musulmans.
-                </p>
-                <p className="text-lg text-white/40 italic">(Source : Pew Research Center)</p>
-              </div>
-
-              <div className="space-y-1">
-                <p className="text-xl font-light">
-                  En France, la population musulmane est estimée entre <span className="font-bold text-white">5 et 6 millions</span> de personnes.
-                </p>
-                <p className="text-lg text-white/40 italic">(Source : Pew Research Center)</p>
+                <p className="text-brand-accent font-bold uppercase tracking-wider text-lg">Un marché significatif et durable</p>
+                <div className="space-y-3">
+                  <div>
+                    <p className="text-lg font-light">
+                      L’Europe compte environ <span className="font-bold text-white">30 millions</span> de musulmans.
+                    </p>
+                    <p className="text-xs text-white/40 italic">(Source : Pew Research Center)</p>
+                  </div>
+                  <div>
+                    <p className="text-lg font-light">
+                      En France, la population musulmane est estimée entre <span className="font-bold text-white">5 et 6 millions</span> de personnes.
+                    </p>
+                    <p className="text-xs text-white/40 italic">(Source : Pew Research Center)</p>
+                  </div>
+                </div>
               </div>
               
-              <p className="text-xl font-normal leading-relaxed opacity-90 border-t border-white/5 pt-4">
-                L’usage quotidien et la logique cadeau rendent la demande structurellement récurrente.
+              <p className="text-lg font-normal leading-relaxed opacity-90 border-t border-white/5 pt-4">
+                L’usage quotidien du tapis de prière, combiné à une forte dimension symbolique et à une logique cadeau, crée une demande structurellement récurrente.
               </p>
             </div>
           </div>
 
-          {/* Conclusion Right */}
-          <div className="lg:border-l lg:border-white/10 lg:pl-12 space-y-4 h-full flex flex-col justify-center">
+          {/* Projection Right */}
+          <div className="lg:border-l lg:border-white/10 lg:pl-12 space-y-6">
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold uppercase tracking-widest text-brand-accent">Projection économique prudente</h3>
+              <div className="grid grid-cols-1 gap-4 text-base bg-white/5 p-5 rounded-sm border border-white/10">
+                <div className="space-y-2 font-light">
+                  <p className="text-sm italic text-white/60 mb-2">Sur une base conservatrice :</p>
+                  <p>• 30M en Europe</p>
+                  <p>• 40 % pratiquants réguliers → <span className="text-white font-medium">12M</span></p>
+                  <p>• 50 % équipés ou renouvelant leur tapis → <span className="text-white font-medium">6M</span></p>
+                  <p>• Panier moyen segment artisanal premium : <span className="text-brand-accent font-bold">120 €</span></p>
+                </div>
+                <div className="pt-3 border-t border-white/10">
+                  <p className="text-lg font-serif">➡ Marché potentiel estimé : <span className="text-xl text-[#D2B48C] font-bold">720 M€</span></p>
+                </div>
+                <div className="text-sm text-white/70 bg-brand-primary/10 p-3 rounded-sm">
+                  Même avec une captation de <span className="font-bold text-white">1 %</span> : 
+                  <span className="block text-white font-bold mt-1">→ 7,2 M€ de CA potentiel.</span>
+                </div>
+              </div>
+            </div>
+
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               className="space-y-4"
             >
-              <h3 className="text-2xl md:text-3xl lg:text-4xl font-serif leading-tight text-brand-accent">
+              <h3 className="text-2xl md:text-3xl font-serif leading-tight text-brand-accent">
                 <span className="whitespace-nowrap">Construisons ensemble</span> <br className="hidden lg:block" /> <span className="whitespace-nowrap">une marque de référence</span>
               </h3>
-              <p className="text-2xl opacity-70 leading-relaxed">
-                Un acteur positionné sur l’artisanat haut de gamme peut capter un segment de marché durable.
+              <p className="text-lg opacity-70 leading-relaxed font-light">
+                Un positionnement artisanal haut de gamme permet de capter un segment à forte valeur ajoutée et de structurer un marché encore fragmenté.
               </p>
-              <div className="pt-4">
+              <div className="pt-2">
                 <Link href="/projet">
                   <button className="w-full md:w-auto px-8 py-3 bg-[#DCCBB5] text-black font-bold rounded-sm uppercase tracking-widest text-xs hover:bg-white hover:text-black transition-all shadow-xl cursor-pointer">
                     Découvrir notre modèle
