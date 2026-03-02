@@ -316,7 +316,7 @@ export default function Home() {
               title="Objet central"
               titleClassName="text-xl md:text-2xl text-black font-bold"
               descriptionClassName="mt-8"
-              description="Utilisé quotidiennement, l'offre dominante reste pourtant industrielle et peu différenciée."
+              description="Usage quotidien structurant. Produit fonctionnel à forte dimension symbolique."
               delay={0.1}
             />
             <Card 
