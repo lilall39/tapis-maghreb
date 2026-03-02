@@ -284,14 +284,22 @@ export default function Home() {
               viewport={{ once: true }}
               className="inline-block px-4 py-1 bg-brand-primary/5 text-brand-primary text-xs font-bold uppercase tracking-widest rounded-full"
             >
-              Le Constat
+              LE CONSTAT
             </motion.div>
             <h2 className="text-4xl md:text-5xl font-serif text-charcoal leading-tight">
-              Un décalage structurel entre <span className="italic text-brand-primary">usage et offre</span>
+              Un marché existant mais <span className="italic text-brand-primary">sous-valorisé</span>
             </h2>
-            <p className="text-xl text-charcoal/70 leading-relaxed font-light">
-              Le tapis de prière est un objet central, pourtant son traitement reste majoritairement industriel et standardisé. Une clientèle urbaine et solvable recherche aujourd'hui des produits sobres, authentiques et durables.
-            </p>
+            <div className="space-y-4 text-xl text-charcoal/70 leading-relaxed font-light">
+              <p>
+                Le tapis de prière est un objet d’usage quotidien pour des millions de personnes en Europe.
+              </p>
+              <p>
+                Pourtant, l’offre dominante reste majoritairement industrielle, peu différenciée et rarement positionnée sur le segment artisanal haut de gamme.
+              </p>
+              <p>
+                Une clientèle urbaine et solvable exprime aujourd’hui une demande croissante pour des produits sobres, authentiques et durables.
+              </p>
+            </div>
             <div className="pt-4">
               <button 
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
