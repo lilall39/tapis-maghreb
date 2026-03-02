@@ -43,10 +43,10 @@ export default function Produit() {
         }
         subtitle="Une offre claire, une production maîtrisée et des éléments différenciants identifiés. Les fondations sont posées pour une exécution progressive et maîtrisée."
         imageUrl="/assets/rugs-collection.png"
-        titleClassName="pt-12 md:pt-16"
+        titleClassName="pt-4 md:pt-16"
         textContainerClassName="lg:-ml-24"
-        subtitleClassName="text-xl md:text-2xl not-italic font-normal mt-8 md:mt-12"
-        buttonContainerClassName="pt-12 md:pt-24"
+        subtitleClassName="text-xl md:text-2xl not-italic font-normal mt-4 md:mt-12"
+        buttonContainerClassName="pt-4 md:pt-24"
         buttonText="Pourquoi nous rejoindre"
         buttonLink="/partenariats"
       >
@@ -66,16 +66,16 @@ export default function Produit() {
                   duration: 1.5, 
                   ease: [0.16, 1, 0.3, 1] 
                 }}
-                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-6 lg:pt-16 px-6 lg:px-12 py-4 lg:py-10 z-10 cursor-default"
+                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-2 lg:pt-16 px-4 lg:px-12 py-2 lg:py-10 z-10 cursor-default"
               >
-                <div className="space-y-2 lg:space-y-4">
+                <div className="space-y-1 lg:space-y-4">
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.8 }}
                     className="pb-1 lg:pb-2 border-b border-white/10 mb-1 lg:mb-2"
                   >
-                    <h3 className="text-xl lg:text-3xl font-serif text-[#F5E6D3] italic leading-tight mb-1 lg:mb-2">
+                    <h3 className="text-lg lg:text-3xl font-serif text-[#F5E6D3] italic leading-tight mb-1 lg:mb-2">
                       Des éléments difficilement <span className="italic text-[#D2B48C]">réplicables</span>
                     </h3>
                     <p className="text-sm lg:text-xl text-[#F5E6D3]/90 font-normal leading-tight lg:leading-relaxed">
@@ -124,16 +124,16 @@ export default function Produit() {
                   duration: 1.5, 
                   ease: [0.16, 1, 0.3, 1] 
                 }}
-                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-6 lg:pt-16 px-6 lg:px-12 py-4 lg:py-10 z-10 cursor-default"
+                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-2 lg:pt-16 px-4 lg:px-12 py-2 lg:py-10 z-10 cursor-default"
               >
-                <div className="space-y-2 lg:space-y-4">
+                <div className="space-y-1 lg:space-y-4">
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.8 }}
                     className="pb-1 lg:pb-2 border-b border-white/10 mb-1 lg:mb-2"
                   >
-                    <h3 className="text-xl lg:text-3xl font-serif text-[#F5E6D3] italic leading-tight mb-1 lg:mb-2">
+                    <h3 className="text-lg lg:text-3xl font-serif text-[#F5E6D3] italic leading-tight mb-1 lg:mb-2">
                       Positionnement <span className="italic text-[#D2B48C]">produit</span>
                     </h3>
                     <p className="text-sm lg:text-xl text-[#F5E6D3]/90 font-normal leading-tight lg:leading-relaxed">

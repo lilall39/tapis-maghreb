@@ -90,9 +90,9 @@ export default function Home() {
         subtitle="Un marché massif, peu structuré sur le segment premium. Nous redéfinissons le tapis de prière comme un objet d'exception, alliant tradition séculaire et design contemporain."
         imageUrl="/assets/hero-v4.png"
         textContainerClassName="lg:-ml-24"
-        titleClassName="pt-12 md:pt-16"
-        subtitleClassName="text-xl md:text-2xl not-italic font-normal mt-8 md:mt-12"
-        buttonContainerClassName="pt-12 md:pt-20"
+        titleClassName="pt-4 md:pt-16"
+        subtitleClassName="text-xl md:text-2xl not-italic font-normal mt-4 md:mt-12"
+        buttonContainerClassName="pt-4 md:pt-20"
       >
         <div className="relative h-full w-full min-h-[250px] lg:min-h-[650px]">
           <AnimatePresence mode="wait">
@@ -111,17 +111,17 @@ export default function Home() {
                   ease: [0.16, 1, 0.3, 1],
                   delay: 0.3
                 }}
-                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-6 lg:pt-16 px-6 lg:px-12 py-4 lg:py-10 z-10 cursor-default"
+                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-2 lg:pt-16 px-4 lg:px-12 py-2 lg:py-10 z-10 cursor-default"
               >
-                <div className="space-y-2 lg:space-y-4">
+                <div className="space-y-1 lg:space-y-4">
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.8 }}
-                    className="pb-1 lg:pb-2 border-b border-white/10 mb-2 lg:mb-4"
+                    className="pb-1 lg:pb-2 border-b border-white/10 mb-1 lg:mb-4"
                   >
                     <p className="text-brand-accent font-bold uppercase tracking-[0.3em] text-[10px] lg:text-sm mb-0 lg:mb-1">Chiffres Clés</p>
-                    <h3 className="text-xl lg:text-3xl font-serif text-[#F5E6D3] italic">Analyse du Marché</h3>
+                    <h3 className="text-lg lg:text-3xl font-serif text-[#F5E6D3] italic">Analyse du Marché</h3>
                   </motion.div>
 
                   {[
@@ -136,7 +136,7 @@ export default function Home() {
                       transition={{ duration: 0.8, delay: 1.0 + (i * 0.2), ease: "easeOut" }}
                       className="flex flex-col"
                     >
-                      <div className="text-2xl lg:text-4xl font-serif text-[#D2B48C] font-bold origin-left drop-shadow-sm mb-0 lg:mb-2">
+                      <div className="text-xl lg:text-4xl font-serif text-[#D2B48C] font-bold origin-left drop-shadow-sm mb-0 lg:mb-2">
                         {stat.value}
                       </div>
                       <div className="space-y-0">
@@ -165,9 +165,9 @@ export default function Home() {
                   duration: 1.5, 
                   ease: [0.16, 1, 0.3, 1] 
                 }}
-                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-6 lg:pt-16 px-6 lg:px-12 py-4 lg:py-10 z-20 cursor-default"
+                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-2 lg:pt-16 px-4 lg:px-12 py-2 lg:py-10 z-20 cursor-default"
               >
-                <div className="space-y-2 lg:space-y-4">
+                <div className="space-y-1 lg:space-y-4">
                   <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
