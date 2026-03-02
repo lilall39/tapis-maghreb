@@ -63,8 +63,8 @@ const Infographic = () => {
   ];
 
   return (
-    <div className="relative w-full flex flex-col items-center">
-      <div className="relative w-full max-w-7xl mx-auto select-none flex items-center justify-start min-h-[350px] md:min-h-[750px] pl-4 md:pl-20 scale-[0.6] md:scale-[0.8] lg:scale-[0.85] origin-left md:origin-center">
+    <div className="relative w-full flex flex-col items-center overflow-hidden">
+      <div className="relative w-full max-w-7xl mx-auto select-none flex items-center justify-center min-h-[450px] md:min-h-[750px] scale-[0.45] md:scale-[0.8] lg:scale-[0.85] origin-center">
         
         <motion.div 
           initial={{ scale: 0.9, opacity: 0, x: -50 }}
