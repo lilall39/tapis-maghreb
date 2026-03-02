@@ -27,61 +27,60 @@ const Infographic = () => {
   const steps = [
     {
       id: "01",
-      icon: <Lightbulb size={24} />,
+      icon: <Lightbulb size={20} />,
       title: "Sourcing ateliers",
-      desc: "Partenaires identifiés au Maghreb, capacité ajustable.",
+      desc: "Partenaires identifiés au Maghreb.",
       angle: -52, // Increased spread
     },
     {
       id: "02",
-      icon: <Target size={24} />,
+      icon: <Target size={20} />,
       title: "Production contrôlée",
-      desc: "Qualité validée, volumes maîtrisés.",
+      desc: "Qualité validée.",
       angle: -26,
     },
     {
       id: "03",
-      icon: <Handshake size={24} />,
+      icon: <Handshake size={20} />,
       title: "Logistique & import",
-      desc: "Flux organisés, coûts anticipés.",
+      desc: "Coûts anticipés.",
       angle: 0,
     },
     {
       id: "04",
-      icon: <Settings size={24} />,
-      title: "Distribution directe (D2C)",
-      desc: "E-commerce propriétaire, marge préservée.",
+      icon: <Settings size={20} />,
+      title: "Distribution (D2C)",
+      desc: "Marge préservée.",
       angle: 26,
     },
     {
       id: "05",
-      icon: <TrendingUp size={24} />,
-      title: "Montée en charge progressive",
-      desc: "Croissance par paliers, risque maîtrisé.",
+      icon: <TrendingUp size={20} />,
+      title: "Montée en charge",
+      desc: "Risque maîtrisé.",
       angle: 52,
     }
   ];
 
   return (
-    <div className="relative w-full flex flex-col">
-      <div className="relative w-full max-w-7xl mx-auto select-none flex items-center justify-start min-h-[650px] md:min-h-[750px] pl-6 md:pl-20 scale-[0.8] lg:scale-[0.85] origin-center">
+    <div className="relative w-full flex flex-col items-center">
+      <div className="relative w-full max-w-7xl mx-auto select-none flex items-center justify-start min-h-[350px] md:min-h-[750px] pl-4 md:pl-20 scale-[0.6] md:scale-[0.8] lg:scale-[0.85] origin-left md:origin-center">
         
         <motion.div 
           initial={{ scale: 0.9, opacity: 0, x: -50 }}
           animate={{ scale: 1, opacity: 1, x: 0 }}
-          className="relative z-50 w-[360px] h-[360px] md:w-[500px] md:h-[500px] rounded-full bg-[#244D2F] border-4 border-[#D2B48C] shadow-2xl flex flex-col items-center justify-center text-center p-12 md:p-16 shrink-0"
+          className="relative z-50 w-[280px] h-[280px] md:w-[500px] md:h-[500px] rounded-full bg-[#244D2F] border-4 border-[#D2B48C] shadow-2xl flex flex-col items-center justify-center text-center p-8 md:p-16 shrink-0"
         >
-          <div className="space-y-6 -translate-y-4 w-full max-w-[280px] md:max-w-[380px] mx-auto">
+          <div className="space-y-4 -translate-y-2 md:-translate-y-4 w-full max-w-[220px] md:max-w-[380px] mx-auto">
             <div className="space-y-1">
-              <h3 className="text-white font-serif font-bold text-2xl md:text-4xl tracking-tight uppercase shadow-none">
+              <h3 className="text-white font-serif font-bold text-xl md:text-4xl tracking-tight uppercase shadow-none">
                 Business
               </h3>
-              <h3 className="text-white font-serif font-bold text-2xl md:text-4xl tracking-tight uppercase shadow-none">
+              <h3 className="text-white font-serif font-bold text-xl md:text-4xl tracking-tight uppercase shadow-none">
                 Infographic
               </h3>
             </div>
-            <p className="text-white text-xl md:text-2xl leading-relaxed font-medium shadow-none">
-              Production artisanale, distribution directe, montée progressive. <br />
+            <p className="text-white text-base md:text-2xl leading-relaxed font-medium shadow-none">
               Chaîne de valeur maîtrisée – Risque contrôlé.
             </p>
           </div>
@@ -188,35 +187,35 @@ const Infographic = () => {
                         initial={{ scale: 0, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         transition={{ delay: 0.5 + (i * 0.1) }}
-                        className="w-14 h-14 md:w-18 md:h-18 rounded-full bg-white/10 backdrop-blur-md border-2 border-[#D2B48C] flex items-center justify-center shrink-0 z-40 relative group-hover:bg-white/20 transition-all duration-500"
-                      >
-                        <div className="text-white scale-90 md:scale-100">
-                          {step.icon}
-                        </div>
-                      </motion.div>
+                      className="w-10 h-10 md:w-18 md:h-18 rounded-full bg-white/10 backdrop-blur-md border-2 border-[#D2B48C] flex items-center justify-center shrink-0 z-40 relative group-hover:bg-white/20 transition-all duration-500"
+                    >
+                      <div className="text-white scale-75 md:scale-100">
+                        {step.icon}
+                      </div>
+                    </motion.div>
 
-                      {/* Arrow-style Info Box */}
-                      <motion.div
-                        initial={{ x: 30, opacity: 0 }}
-                        animate={{ x: 0, opacity: 1 }}
-                        transition={{ delay: 0.7 + (i * 0.1) }}
-                        className="relative w-[400px] md:w-[540px] h-auto min-h-[110px] md:min-h-[130px]"
-                      >
-                        {/* Step Badge (Top Right of box) */}
-                        <div className="absolute -top-3 right-6 w-10 h-10 rounded-full bg-white text-charcoal flex items-center justify-center font-bold text-xs z-50 shadow-xl border-2 border-[#D2B48C]">
-                          {step.id}
-                        </div>
+                    {/* Arrow-style Info Box */}
+                    <motion.div
+                      initial={{ x: 30, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ delay: 0.7 + (i * 0.1) }}
+                      className="relative w-[280px] md:w-[540px] h-auto min-h-[80px] md:min-h-[130px]"
+                    >
+                      {/* Step Badge (Top Right of box) */}
+                      <div className="absolute -top-2 md:-top-3 right-4 md:right-6 w-8 h-8 md:w-10 md:h-10 rounded-full bg-white text-charcoal flex items-center justify-center font-bold text-[10px] md:text-xs z-50 shadow-xl border-2 border-[#D2B48C]">
+                        {step.id}
+                      </div>
 
-                        {/* Box with arrow shape pointing right */}
-                        <div 
-                          className="bg-[#4a915c]/70 backdrop-blur-xl p-6 pr-16 border-2 border-[#D2B48C] shadow-2xl group-hover:border-[#D2B48C]/80 transition-all duration-500 h-full flex flex-col justify-center text-left"
-                          style={{
-                            clipPath: "polygon(0% 0%, 88% 0%, 100% 50%, 88% 100%, 0% 100%)"
-                          }}
-                        >
-                          <h4 className="text-white font-serif font-bold text-lg md:text-xl tracking-wide mb-1 uppercase transition-colors">{step.title}</h4>
-                          <p className="text-white/90 text-lg md:text-xl leading-relaxed font-medium">{step.desc}</p>
-                        </div>
+                      {/* Box with arrow shape pointing right */}
+                      <div 
+                        className="bg-[#4a915c]/70 backdrop-blur-xl p-4 md:p-6 pr-10 md:pr-16 border-2 border-[#D2B48C] shadow-2xl group-hover:border-[#D2B48C]/80 transition-all duration-500 h-full flex flex-col justify-center text-left"
+                        style={{
+                          clipPath: "polygon(0% 0%, 88% 0%, 100% 50%, 88% 100%, 0% 100%)"
+                        }}
+                      >
+                        <h4 className="text-white font-serif font-bold text-base md:text-xl tracking-wide mb-0.5 md:mb-1 uppercase transition-colors">{step.title}</h4>
+                        <p className="text-white/90 text-sm md:text-xl leading-tight md:leading-relaxed font-medium">{step.desc}</p>
+                      </div>
                       </motion.div>
                     </div>
                  </div>

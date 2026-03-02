@@ -50,7 +50,7 @@ export default function Produit() {
         buttonText="Pourquoi nous rejoindre"
         buttonLink="/partenariats"
       >
-        <div className="relative h-full w-full min-h-[500px] lg:min-h-[650px]">
+        <div className="relative h-full w-full min-h-[250px] lg:min-h-[650px]">
           <AnimatePresence mode="wait">
             {activeCard === 0 ? (
               /* Première Carte - Vert Foncé */
@@ -66,32 +66,32 @@ export default function Produit() {
                   duration: 1.5, 
                   ease: [0.16, 1, 0.3, 1] 
                 }}
-                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-16 px-12 py-10 z-10 cursor-default"
+                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-6 lg:pt-16 px-6 lg:px-12 py-4 lg:py-10 z-10 cursor-default"
               >
-                <div className="space-y-4">
+                <div className="space-y-2 lg:space-y-4">
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.8 }}
-                    className="pb-2 border-b border-white/10 mb-2"
+                    className="pb-1 lg:pb-2 border-b border-white/10 mb-1 lg:mb-2"
                   >
-                    <h3 className="text-3xl font-serif text-[#F5E6D3] italic leading-tight mb-2">
+                    <h3 className="text-xl lg:text-3xl font-serif text-[#F5E6D3] italic leading-tight mb-1 lg:mb-2">
                       Des éléments difficilement <span className="italic text-[#D2B48C]">réplicables</span>
                     </h3>
-                    <p className="text-xl text-[#F5E6D3]/90 font-normal leading-relaxed">
+                    <p className="text-sm lg:text-xl text-[#F5E6D3]/90 font-normal leading-tight lg:leading-relaxed">
                       Positionnement clair, ancrage culturel et structure opérationnelle.
                     </p>
                   </motion.div>
 
-                  <div className="space-y-4">
+                  <div className="space-y-2 lg:space-y-4">
                     <motion.div 
                       initial={{ opacity: 0, x: 20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.8, delay: 1.0 }}
-                      className="flex items-start gap-4"
+                      className="flex items-start gap-2 lg:gap-4"
                     >
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#D2B48C] mt-2.5 flex-shrink-0" />
-                      <p className="text-xl text-[#F5E6D3]/90 leading-relaxed font-light">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#D2B48C] mt-1.5 lg:mt-2.5 flex-shrink-0" />
+                      <p className="text-xs lg:text-xl text-[#F5E6D3]/90 leading-tight lg:leading-relaxed font-light">
                         Production artisanale au Maghreb, ateliers identifiés.
                       </p>
                     </motion.div>
@@ -100,10 +100,10 @@ export default function Produit() {
                       initial={{ opacity: 0, x: 20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.8, delay: 1.2 }}
-                      className="flex items-start gap-4"
+                      className="flex items-start gap-2 lg:gap-4"
                     >
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#D2B48C] mt-2.5 flex-shrink-0" />
-                      <p className="text-xl text-[#F5E6D3]/90 leading-relaxed font-light">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#D2B48C] mt-1.5 lg:mt-2.5 flex-shrink-0" />
+                      <p className="text-xs lg:text-xl text-[#F5E6D3]/90 leading-tight lg:leading-relaxed font-light">
                         Volumes maîtrisés et qualité constante.
                       </p>
                     </motion.div>
@@ -124,32 +124,32 @@ export default function Produit() {
                   duration: 1.5, 
                   ease: [0.16, 1, 0.3, 1] 
                 }}
-                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-16 px-12 py-10 z-10 cursor-default"
+                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-[#D2B48C] backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-6 lg:pt-16 px-6 lg:px-12 py-4 lg:py-10 z-10 cursor-default"
               >
-                <div className="space-y-4">
+                <div className="space-y-2 lg:space-y-4">
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.8 }}
-                    className="pb-2 border-b border-white/10 mb-2"
+                    className="pb-1 lg:pb-2 border-b border-white/10 mb-1 lg:mb-2"
                   >
-                    <h3 className="text-3xl font-serif text-[#F5E6D3] italic leading-tight mb-2">
+                    <h3 className="text-xl lg:text-3xl font-serif text-[#F5E6D3] italic leading-tight mb-1 lg:mb-2">
                       Positionnement <span className="italic text-[#D2B48C]">produit</span>
                     </h3>
-                    <p className="text-xl text-[#F5E6D3]/90 font-normal leading-relaxed">
+                    <p className="text-sm lg:text-xl text-[#F5E6D3]/90 font-normal leading-tight lg:leading-relaxed">
                       Aucune marque structurée n’occupe aujourd’hui le segment artisanal haut de gamme.
                     </p>
                   </motion.div>
 
-                  <div className="space-y-4">
+                  <div className="space-y-2 lg:space-y-4">
                     <motion.div 
                       initial={{ opacity: 0, x: 20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.8, delay: 1.0 }}
-                      className="flex items-start gap-4"
+                      className="flex items-start gap-2 lg:gap-4"
                     >
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#D2B48C] mt-2.5 flex-shrink-0" />
-                      <p className="text-xl text-[#F5E6D3]/90 leading-relaxed font-light">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#D2B48C] mt-1.5 lg:mt-2.5 flex-shrink-0" />
+                      <p className="text-xs lg:text-xl text-[#F5E6D3]/90 leading-tight lg:leading-relaxed font-light">
                         Design sobre et contemporain.
                       </p>
                     </motion.div>
@@ -158,10 +158,10 @@ export default function Produit() {
                       initial={{ opacity: 0, x: 20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.8, delay: 1.2 }}
-                      className="flex items-start gap-4"
+                      className="flex items-start gap-2 lg:gap-4"
                     >
-                      <div className="w-1.5 h-1.5 rounded-full bg-[#D2B48C] mt-2.5 flex-shrink-0" />
-                      <p className="text-xl text-[#F5E6D3]/90 leading-relaxed font-light">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#D2B48C] mt-1.5 lg:mt-2.5 flex-shrink-0" />
+                      <p className="text-xs lg:text-xl text-[#F5E6D3]/90 leading-tight lg:leading-relaxed font-light">
                         Premium accessible, sans surcharge visuelle.
                       </p>
                     </motion.div>

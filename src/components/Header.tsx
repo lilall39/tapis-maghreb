@@ -26,20 +26,19 @@ const Header = () => {
   ];
 
   return (
-    <header 
       className={cn(
         "fixed top-0 left-0 w-full z-50 transition-all duration-500",
-        scrolled ? "bg-white/90 backdrop-blur-md h-24 shadow-sm" : "bg-transparent h-28"
+        scrolled ? "bg-white/90 backdrop-blur-md h-12 lg:h-24 shadow-sm" : "bg-transparent h-14 lg:h-28"
       )}
     >
       <div className={cn(
         "w-full px-6 flex items-center justify-between transition-all duration-500",
-        scrolled ? "h-20" : "h-24"
+        scrolled ? "h-10 lg:h-20" : "h-12 lg:h-24"
       )}>
         <Link 
           href="/" 
           className={cn(
-            "text-xl md:text-2xl font-serif font-semibold tracking-tighter transition-colors duration-500",
+            "text-lg lg:text-2xl font-serif font-semibold tracking-tighter transition-colors duration-500",
             scrolled ? "text-brand-primary" : "text-white"
           )}
         >

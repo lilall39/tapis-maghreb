@@ -94,7 +94,7 @@ export default function Home() {
         subtitleClassName="text-xl md:text-2xl not-italic font-normal mt-8 md:mt-12"
         buttonContainerClassName="pt-12 md:pt-20"
       >
-        <div className="relative h-full w-full min-h-[500px] lg:min-h-[650px]">
+        <div className="relative h-full w-full min-h-[250px] lg:min-h-[650px]">
           <AnimatePresence mode="wait">
             {activeCard === 0 ? (
               /* Première Carte - Chiffres Clés */
@@ -111,17 +111,17 @@ export default function Home() {
                   ease: [0.16, 1, 0.3, 1],
                   delay: 0.3
                 }}
-                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-16 px-12 py-10 z-10 cursor-default"
+                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-6 lg:pt-16 px-6 lg:px-12 py-4 lg:py-10 z-10 cursor-default"
               >
-                <div className="space-y-4">
+                <div className="space-y-2 lg:space-y-4">
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.8 }}
-                    className="pb-2 border-b border-white/10 mb-4"
+                    className="pb-1 lg:pb-2 border-b border-white/10 mb-2 lg:mb-4"
                   >
-                    <p className="text-brand-accent font-bold uppercase tracking-[0.3em] text-sm mb-1">Chiffres Clés</p>
-                    <h3 className="text-3xl font-serif text-[#F5E6D3] italic">Analyse du Marché</h3>
+                    <p className="text-brand-accent font-bold uppercase tracking-[0.3em] text-[10px] lg:text-sm mb-0 lg:mb-1">Chiffres Clés</p>
+                    <h3 className="text-xl lg:text-3xl font-serif text-[#F5E6D3] italic">Analyse du Marché</h3>
                   </motion.div>
 
                   {[
@@ -136,14 +136,14 @@ export default function Home() {
                       transition={{ duration: 0.8, delay: 1.0 + (i * 0.2), ease: "easeOut" }}
                       className="flex flex-col"
                     >
-                      <div className="text-4xl font-serif text-[#D2B48C] font-bold origin-left drop-shadow-sm mb-2">
+                      <div className="text-2xl lg:text-4xl font-serif text-[#D2B48C] font-bold origin-left drop-shadow-sm mb-0 lg:mb-2">
                         {stat.value}
                       </div>
                       <div className="space-y-0">
-                        <p className="text-lg font-bold text-[#DCCBB5] uppercase tracking-[0.2em]">
+                        <p className="text-[10px] lg:text-lg font-bold text-[#DCCBB5] uppercase tracking-[0.2em]">
                           {stat.label}
                         </p>
-                        <p className="text-lg text-[#F5E6D3]/80 font-medium italic leading-relaxed">
+                        <p className="text-[10px] lg:text-lg text-[#F5E6D3]/80 font-medium italic leading-tight lg:leading-relaxed">
                           {stat.desc}
                         </p>
                       </div>
@@ -165,23 +165,23 @@ export default function Home() {
                   duration: 1.5, 
                   ease: [0.16, 1, 0.3, 1] 
                 }}
-                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-16 px-12 py-10 z-20 cursor-default"
+                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-6 lg:pt-16 px-6 lg:px-12 py-4 lg:py-10 z-20 cursor-default"
               >
-                <div className="space-y-4">
+                <div className="space-y-2 lg:space-y-4">
                   <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.8, duration: 0.8 }}
-                    className="w-16 h-16 rounded-full bg-brand-primary/20 flex items-center justify-center mb-4"
+                    className="w-10 h-10 lg:w-16 lg:h-16 rounded-full bg-brand-primary/20 flex items-center justify-center mb-2 lg:mb-4"
                   >
-                    <Star className="text-[#D2B48C]" size={32} />
+                    <Star className="text-[#D2B48C]" size={20} />
                   </motion.div>
                   
               <motion.h3 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1.0 }}
-                className="text-3xl font-serif text-[#F5E6D3] leading-tight"
+                className="text-xl lg:text-3xl font-serif text-[#F5E6D3] leading-tight"
               >
                 Une opportunité <br />
                 <span className="italic text-[#D2B48C]">unique de structuration</span>
@@ -191,19 +191,19 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.2, duration: 1 }}
-                className="space-y-4"
+                className="space-y-2 lg:space-y-4"
               >
-                <div className="space-y-1 text-xl text-[#F5E6D3]/90 leading-relaxed font-light">
+                <div className="space-y-0 lg:space-y-1 text-sm lg:text-xl text-[#F5E6D3]/90 leading-tight lg:leading-relaxed font-light">
                   <p>L’usage est quotidien.</p>
                   <p>La demande qualitative existe.</p>
                   <p>Mais l’offre reste industrielle.</p>
                 </div>
                 
-                <p className="text-lg text-[#F5E6D3]/70 font-light">
+                <p className="text-xs lg:text-lg text-[#F5E6D3]/70 font-light">
                   Le marché demeure fragmenté, sans référence claire.
                 </p>
 
-                <p className="text-xl text-[#DCCBB5] font-serif italic border-l-2 border-brand-primary pl-6 mt-8 lg:-ml-6">
+                <p className="text-sm lg:text-xl text-[#DCCBB5] font-serif italic border-l-2 border-brand-primary pl-4 lg:pl-6 mt-4 lg:mt-8 lg:-ml-6">
                   “Nous construisons la marque de référence.”
                 </p>
               </motion.div>

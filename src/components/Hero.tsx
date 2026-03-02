@@ -46,7 +46,7 @@ const Hero = ({
   return (
     <div className={cn(
       "relative w-full overflow-hidden flex items-center",
-      fullHeight ? "min-h-[85vh]" : "min-h-[60vh]",
+      fullHeight ? "min-h-[50vh] lg:min-h-[85vh]" : "min-h-[40vh] lg:min-h-[60vh]",
       className
     )}>
       {/* Background Image with Optional Zoom Animation */}
@@ -69,7 +69,7 @@ const Hero = ({
         </motion.div>
       )}
 
-      <div className="max-w-7xl mx-auto px-6 py-8 relative z-10 w-full">
+      <div className="max-w-7xl mx-auto px-6 py-4 lg:py-8 relative z-10 w-full">
         <div className={cn(
           "flex flex-col items-center",
           centered ? "text-center" : "lg:grid-cols-12 lg:grid lg:gap-12 lg:items-center"
@@ -79,20 +79,20 @@ const Hero = ({
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className={cn(
-              "space-y-8",
-              centered ? "max-w-6xl mx-auto mb-16" : "lg:col-span-7",
+              "space-y-4 lg:space-y-8",
+              centered ? "max-w-6xl mx-auto mb-8 lg:mb-16" : "lg:col-span-7",
               textContainerClassName
             )}
           >
             <h1 className={cn(
-              "text-4xl md:text-6xl lg:text-7xl font-serif text-[#D2B48C] leading-[1.1] tracking-tight drop-shadow-sm",
+              "text-2xl md:text-6xl lg:text-7xl font-serif text-[#D2B48C] leading-[1.1] tracking-tight drop-shadow-sm",
               titleClassName
             )}>
               {title}
             </h1>
             {subtitle && (
               <p className={cn(
-                "text-lg md:text-xl text-[#F5E6D3] font-medium leading-relaxed italic max-w-2xl",
+                "text-sm md:text-xl text-[#F5E6D3] font-medium leading-relaxed italic max-w-2xl",
                 centered ? "mx-auto" : "",
                 subtitleClassName
               )}>
@@ -102,12 +102,12 @@ const Hero = ({
             
             {showButton && (
               <div className={cn(
-                "pt-4 flex flex-wrap gap-4",
+                "pt-2 lg:pt-4 flex flex-wrap gap-4",
                 centered ? "justify-center" : "",
                 buttonContainerClassName
               )}>
                 <Link href={buttonLink}>
-                  <button className="px-8 py-4 bg-[#DCCBB5] text-charcoal font-bold hover:bg-white active:bg-white transition-all duration-300 rounded-sm uppercase tracking-widest text-xs cursor-pointer shadow-lg hover:shadow-xl">
+                  <button className="px-4 py-2 lg:px-8 lg:py-4 bg-[#DCCBB5] text-charcoal font-bold hover:bg-white active:bg-white transition-all duration-300 rounded-sm uppercase tracking-widest text-[10px] lg:text-xs cursor-pointer shadow-lg hover:shadow-xl">
                     {buttonText}
                   </button>
                 </Link>
