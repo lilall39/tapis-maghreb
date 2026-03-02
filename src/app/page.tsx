@@ -90,11 +90,11 @@ export default function Home() {
         subtitle="Un marché massif, peu structuré sur le segment premium. Nous redéfinissons le tapis de prière comme un objet d'exception, alliant tradition séculaire et design contemporain."
         imageUrl="/assets/hero-v4.png"
         textContainerClassName="lg:-ml-24"
-        titleClassName="pt-4 md:pt-16"
+        titleClassName="pt-12 md:pt-16"
         subtitleClassName="text-xl md:text-2xl not-italic font-normal mt-4 md:mt-12"
         buttonContainerClassName="pt-4 md:pt-20"
       >
-        <div className="relative h-full w-full min-h-[250px] lg:min-h-[650px]">
+        <div className="relative h-full w-full min-h-[350px] lg:min-h-[650px]">
           <AnimatePresence mode="wait">
             {activeCard === 0 ? (
               /* Première Carte - Chiffres Clés */
