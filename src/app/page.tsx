@@ -324,7 +324,7 @@ export default function Home() {
               title="Fragmenté"
               titleClassName="text-xl md:text-2xl text-black font-bold"
               descriptionClassName="mt-8"
-              description="Absence de marque de référence sur le haut de gamme. Aucun acteur positionné clairement."
+              description="Absence de marque de référence sur le segment premium. Offre dispersée et peu positionnée."
               delay={0.2}
             />
             <Card 
