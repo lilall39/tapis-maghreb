@@ -342,7 +342,7 @@ export default function Home() {
 
       {/* Section 4: Taille du Marché (Detailed & Compact) */}
       <SectionWrapper light={false} className="bg-[#352F36] text-white [&>div]:py-6 md:[&>div]:py-14">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Market Stats Left */}
           <div className="space-y-6 text-xl">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
@@ -400,27 +400,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="space-y-4"
-            >
-              <h3 className="text-2xl md:text-3xl font-serif leading-tight text-brand-accent">
-                <span className="whitespace-nowrap">Construisons ensemble</span> <br className="hidden lg:block" /> <span className="whitespace-nowrap">une marque de référence</span>
-              </h3>
-              <p className="text-lg opacity-70 leading-relaxed font-light">
-                Un positionnement artisanal haut de gamme permet de capter un segment à forte valeur ajoutée et de structurer un marché encore fragmenté.
-              </p>
-              <div className="pt-2">
-                <Link href="/projet">
-                  <button className="w-full md:w-auto px-8 py-3 bg-[#DCCBB5] text-black font-bold rounded-sm uppercase tracking-widest text-xs hover:bg-white hover:text-black transition-all shadow-xl cursor-pointer">
-                    Découvrir notre modèle
-                  </button>
-                </Link>
-              </div>
-            </motion.div>
           </div>
         </div>
       </SectionWrapper>
