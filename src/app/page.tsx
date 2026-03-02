@@ -399,6 +399,13 @@ export default function Home() {
                   <span className="block text-white font-bold mt-1">→ 7,2 M€ de CA potentiel.</span>
                 </div>
               </div>
+              <div className="pt-4">
+                <Link href="/projet">
+                  <button className="w-full md:w-auto px-8 py-3 bg-[#DCCBB5] text-black font-bold rounded-sm uppercase tracking-widest text-xs hover:bg-white hover:text-black transition-all shadow-xl cursor-pointer">
+                    Découvrir notre modèle
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
