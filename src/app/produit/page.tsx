@@ -262,7 +262,7 @@ export default function Produit() {
           </motion.div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 scale-[0.75] md:scale-100 origin-top -mb-[20%] md:mb-0">
           <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
             <div className="space-y-2 w-full">
               <motion.h2 
@@ -326,47 +326,47 @@ export default function Produit() {
 
       {/* Section 3: Différentiation */}
       <SectionWrapper className="bg-[#3D3C30] text-white [&>div]:py-4 md:[&>div]:py-12">
-        <div className="text-center max-w-4xl mx-auto space-y-4 mb-6">
-          <h2 className="text-4xl md:text-5xl font-serif leading-tight text-[#D2B48C]">
+        <div className="text-center max-w-4xl mx-auto space-y-4 mb-4 md:mb-6 scale-[0.85] md:scale-100 origin-top">
+          <h2 className="text-3xl md:text-5xl font-serif leading-tight text-[#D2B48C]">
             Des éléments difficilement <span className="italic text-white">réplicables</span>
           </h2>
-          <p className="text-4xl text-white font-light leading-relaxed">
+          <p className="text-xl md:text-4xl text-white font-light leading-relaxed">
             Positionnement clair, ancrage culturel et structure opérationnelle maîtrisée.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 origin-top">
           <Card 
-            className="bg-white/5 border-white/10 hover:bg-white/10 hover:border-[#D2B48C]/30 text-white"
-            titleClassName="text-xl md:text-3xl"
-            descriptionClassName="mt-8"
+            className="bg-white/5 border-white/10 hover:bg-white/10 hover:border-[#D2B48C]/30 text-white p-3 md:p-8"
+            titleClassName="text-sm md:text-3xl mb-1 md:mb-4"
+            descriptionClassName="mt-1 md:mt-8 text-[10px] md:text-xl leading-tight md:leading-relaxed"
             accentColor="bg-[#D2B48C]"
             hoverAccentColor="group-hover:text-[#D2B48C]"
             title="Sourcing direct"
             description="Positionnement centré sur l’artisanat du Maghreb, segment encore peu structuré sur le premium."
           />
           <Card 
-            className="bg-white/5 border-white/10 hover:bg-white/10 hover:border-[#D2B48C]/30 text-white"
-            titleClassName="text-xl md:text-3xl"
-            descriptionClassName="mt-8"
+            className="bg-white/5 border-white/10 hover:bg-white/10 hover:border-[#D2B48C]/30 text-white p-3 md:p-8"
+            titleClassName="text-sm md:text-3xl mb-1 md:mb-4"
+            descriptionClassName="mt-1 md:mt-8 text-[10px] md:text-xl leading-tight md:leading-relaxed"
             accentColor="bg-[#D2B48C]"
             hoverAccentColor="group-hover:text-[#D2B48C]"
             title="Accès ateliers"
             description="Relations opérationnelles avec des partenaires de production identifiés. Maîtrise des volumes."
           />
           <Card 
-            className="bg-white/5 border-white/10 hover:bg-white/10 hover:border-[#D2B48C]/30 text-white"
-            titleClassName="text-xl md:text-3xl"
-            descriptionClassName="mt-8"
+            className="bg-white/5 border-white/10 hover:bg-white/10 hover:border-[#D2B48C]/30 text-white p-3 md:p-8"
+            titleClassName="text-sm md:text-3xl mb-1 md:mb-4"
+            descriptionClassName="mt-1 md:mt-8 text-[10px] md:text-xl leading-tight md:leading-relaxed"
             accentColor="bg-[#D2B48C]"
             hoverAccentColor="group-hover:text-[#D2B48C]"
             title="Positionnement"
             description="Design sobre et contemporain. Premium accessible, sans ostentation ni surcharge visuelle."
           />
           <Card 
-            className="bg-white/5 border-white/10 hover:bg-white/10 hover:border-[#D2B48C]/30 text-white"
-            titleClassName="text-xl md:text-3xl"
-            descriptionClassName="mt-8"
+            className="bg-white/5 border-white/10 hover:bg-white/10 hover:border-[#D2B48C]/30 text-white p-3 md:p-8"
+            titleClassName="text-sm md:text-3xl mb-1 md:mb-4"
+            descriptionClassName="mt-1 md:mt-8 text-[10px] md:text-xl leading-tight md:leading-relaxed"
             accentColor="bg-[#D2B48C]"
             hoverAccentColor="group-hover:text-[#D2B48C]"
             title="Relais média"
