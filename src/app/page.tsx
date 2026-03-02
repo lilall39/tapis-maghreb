@@ -310,7 +310,7 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="w-full lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="w-full lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-[1.2rem]">
             <Card 
               size="sm"
               title="Objet central"
