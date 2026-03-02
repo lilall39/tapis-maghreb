@@ -332,7 +332,7 @@ export default function Home() {
               title="Solvable"
               titleClassName="text-xl md:text-2xl text-black font-bold"
               descriptionClassName="mt-8"
-              description="Une demande qualitative forte pour des produits qui portent une âme et une histoire."
+              description="Demande qualitative réelle. Capacité d’achat présente sur un segment moyen / haut de gamme."
               delay={0.3}
               className="md:col-span-2"
             />
