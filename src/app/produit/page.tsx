@@ -43,7 +43,7 @@ export default function Produit() {
         }
         subtitle="Une offre claire, une production maîtrisée et des éléments différenciants identifiés. Les fondations sont posées pour une exécution progressive et maîtrisée."
         imageUrl="/assets/rugs-collection.png"
-        titleClassName="pt-4 md:pt-16"
+        titleClassName="pt-12 md:pt-16"
         textContainerClassName="lg:-ml-24"
         subtitleClassName="text-xl md:text-2xl not-italic font-normal mt-4 md:mt-12"
         buttonContainerClassName="pt-4 md:pt-24"

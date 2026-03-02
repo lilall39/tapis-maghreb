@@ -62,7 +62,7 @@ export default function Partenariats() {
         imageUrl="/assets/partnership-hero-final.png"
         animateZoom={true}
         showButton={false}
-        titleClassName="lg:whitespace-nowrap pt-4 md:pt-16"
+        titleClassName="lg:whitespace-nowrap pt-12 md:pt-16"
         subtitleClassName="text-xl md:text-2xl not-italic font-normal mt-4 md:mt-12"
       />
 
