@@ -111,7 +111,7 @@ export default function Home() {
                   ease: [0.16, 1, 0.3, 1],
                   delay: 0.3
                 }}
-                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-2 lg:pt-16 px-4 lg:px-12 py-2 lg:py-10 z-10 cursor-default"
+                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-12 lg:pt-16 px-4 lg:px-12 py-2 lg:py-10 z-10 cursor-default"
               >
                 <div className="space-y-1 lg:space-y-4">
                   <motion.div
@@ -165,7 +165,7 @@ export default function Home() {
                   duration: 1.5, 
                   ease: [0.16, 1, 0.3, 1] 
                 }}
-                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-2 lg:pt-16 px-4 lg:px-12 py-2 lg:py-10 z-20 cursor-default"
+                className="absolute inset-0 lg:top-24 lg:-bottom-40 lg:-right-32 lg:left-28 glass-card border-l-4 border-brand-primary backdrop-blur-3xl bg-[#1A1A1A]/20 border-white/10 shadow-[0_0_50px_rgba(0,0,0,0.3)] flex flex-col justify-start pt-12 lg:pt-16 px-4 lg:px-12 py-2 lg:py-10 z-20 cursor-default"
               >
                 <div className="space-y-1 lg:space-y-4">
                   <motion.div
@@ -191,7 +191,7 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.2, duration: 1 }}
-                className="space-y-2 lg:space-y-4"
+                className="space-y-2 lg:space-y-4 mt-6 lg:mt-0"
               >
                 <div className="space-y-0 lg:space-y-1 text-sm lg:text-xl text-[#F5E6D3]/90 leading-tight lg:leading-relaxed font-light">
                   <p>L’usage est quotidien.</p>

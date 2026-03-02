@@ -88,7 +88,7 @@ export default function Partenariats() {
           {/* Container du Carrousel */}
           <div 
             ref={scrollRef}
-            className="flex overflow-x-auto no-scrollbar snap-x snap-proximity px-6 md:px-[max(1.5rem,calc((100vw-1280px)/2+24px))] pb-10 pt-8 gap-12"
+            className="flex overflow-x-auto no-scrollbar snap-x snap-proximity px-6 md:px-[max(1.5rem,calc((100vw-1280px)/2+24px))] pb-6 pt-6 md:pb-10 md:pt-8 gap-8 md:gap-12"
           >
             {opportunities.map((opt, i) => (
               <div key={i} className="relative flex-shrink-0 w-[80vw] md:w-[450px] snap-start">
@@ -142,9 +142,9 @@ export default function Partenariats() {
                   title={opt.title}
                   description={opt.desc}
                   delay={1.2}
-                  className="h-[460px] flex flex-col justify-between border-charcoal/5 shadow-sm"
+                  className="h-[360px] md:h-[460px] flex flex-col justify-between border-charcoal/5 shadow-sm"
                   titleClassName="text-xl md:text-3xl text-black"
-                  descriptionClassName="mt-16"
+                  descriptionClassName="mt-4 md:mt-16"
                   accentColor="bg-[#4A3728]"
                   hoverAccentColor="group-hover:text-[#4A3728]"
                 >
